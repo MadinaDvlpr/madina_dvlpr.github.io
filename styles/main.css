@@ -66,9 +66,9 @@
   bottom: 0;
   background-color: var(--Third-Light);
   } */
-  /* #footer{
+ #footer{
     display:none;
-  } */
+  } 
  main {
     position: relative;
     top: 0;
@@ -80,6 +80,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--White);
+    overflow: hidden;
+
 }
   .inner-page{
     height: 90vh;
@@ -886,6 +888,9 @@
     .project-description{
     cursor: pointer;
     opacity: 0;
+    }
+    .project-overview{
+      padding: 1em;
     }
     .name{
         color: var(--White);
