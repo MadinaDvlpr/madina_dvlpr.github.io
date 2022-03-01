@@ -13,6 +13,11 @@ MEDIA QUERIES
   
   @media only screen and (max-width:768px) {
 
+    #footer{
+      display: flex;
+      background-color: var(--Primary-Light);
+      z-index: 11111;
+    }
 
     main {
       position: relative;
@@ -20,11 +25,13 @@ MEDIA QUERIES
       left: 0;
       padding: 1.4em;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+      min-height: 92vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: var(--White);
+      margin-bottom: 3em;
     }
     .page-content{
       padding: 1.5rem;
@@ -77,19 +84,7 @@ MEDIA QUERIES
   main *::-webkit-scrollbar{
     display: none;
   }
-  main {
-    position: relative;
-    top: 50px;
-    left: 0;
-    padding: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--White);
-    margin: 0 auto;
-    height: 100%;
-    }
+  
  .page{
      padding: .5rem;
  }
@@ -110,7 +105,7 @@ MEDIA QUERIES
     }
     .page-content p{
     margin: .5em 0;
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: var(--text-font-family);
     font-weight: 400;
     line-height: 1.5;
@@ -229,6 +224,14 @@ MEDIA QUERIES
   .info-list {
     padding: 0 0.5em;
   }
+  
+  .info-list.socials, .share-icon {
+      display: flex;
+      font-size: 16px;
+      line-height: 32px;
+      align-items: center;
+      justify-content: center;
+  }
   .timeline-event, 
   .event-name, 
   .event-description,
@@ -264,6 +267,7 @@ MEDIA QUERIES
   
   .download-cv-block .button{
     margin-top: 3em;
+    width: 31vw;
   }
   .cards-container {
   display: flex;
@@ -310,11 +314,64 @@ MEDIA QUERIES
     margin: 3em 0;
   }
   
+  #footer {
+    display: flex;
+    background-color: var(--Primary-Light);
+    z-index: 11111;
+    position: relative;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-footer{
+  color: var(--White);
+}
+#footer.delete{
+  display: none;
+}
+.social-links-footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1.5em;
+}
+.social-footer ul{
+  list-style: none;
+}
+.social-links-footer li a {
+display: inline-block;
+margin: 0 0.3em;
+width: 30px;
+height: 30px;
+background-color: transparent;
+border: 1px solid var(--White);
+text-align: center;
+}
+
+.social-links-footer li a:hover {
+color: var(--White);
+background-color: var(--Third-Light);
+border-color: transparent;
+}
+
+.social-links-footer li a i {
+font-size: 1em;
+line-height: 30px;
+color: var(--White);
+}
+
+
+
+
   }
 
 
 
   @media screen and (min-width:769px) and (max-width:950px) {
+    footer{
+      display:none;
+    }
   .home-page-block{
     width: 90vw;
     
