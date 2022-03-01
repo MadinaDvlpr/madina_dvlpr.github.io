@@ -353,10 +353,14 @@ align-items: center;
 }
 .navigation.active{
       display: flex;
+      position: relative;
 }
 .social-header.active{
+  position: absolute;
+  top:90vh;
   display: flex;
-  justify-content: space-around;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-list.active,
