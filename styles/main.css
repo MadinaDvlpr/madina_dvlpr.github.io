@@ -455,6 +455,18 @@
       z-index: 1;
       
     }
+
+    .progress-value.grafic-skill{
+      /* box-shadow: 0 10px 40px -10px var(--Secondary-Light); */
+      border-radius: 100px;
+      background: var(--Contrast-Light);
+      height: .5em;
+      width: 0;
+      z-index: 1;
+
+    }
+
+
     
     .progress-value small{
     right: -3em;
@@ -494,7 +506,7 @@
     
     @keyframes load-WebDesign {
       0% { width: 0; }
-      100% { width: 70%; }
+      100% { width: 50%; }
     }
     @keyframes load-print {
       0% { width: 0; }
@@ -506,11 +518,11 @@
     }
     @keyframes load-html {
       0% { width: 0; }
-      100% { width: 90%; }
+      100% { width: 80%; }
     }
     @keyframes load-css {
       0% { width: 0; }
-      100% { width: 80%; }
+      100% { width: 70%; }
     }
     @keyframes load-js {
       0% { width: 0; }
@@ -518,11 +530,11 @@
     }
     @keyframes load-php {
       0% { width: 0; }
-      100% { width: 40%; }
+      100% { width: 20%; }
     }
     @keyframes load-wp {
       0% { width: 0; }
-      100% { width: 70%; }
+      100% { width: 80%; }
     }
     
     /*=========================================================================
@@ -586,7 +598,6 @@
       display: flex;
       width: 20rem;
       height: 20rem;
-      background-color: aqua;
       justify-content: center;
       align-items: center;
     
