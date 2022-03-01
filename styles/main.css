@@ -55,17 +55,7 @@
   color: var(--Primary-Light);
   }
   
-/*   
-  .block-title h3:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  left: -10px;
-  bottom: 0;
-  background-color: var(--Third-Light);
-  } */
+
  #footer{
     display:none;
   } 
