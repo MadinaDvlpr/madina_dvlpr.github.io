@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+
+
 
 :root{
   --Primary-Light:hsla(333, 56%, 16%, 0.95);
@@ -11,8 +14,16 @@
   --Third-Light:hsla(332, 64%, 46%, 1);
   --Contrast-Light:hsla(20, 18%, 23%, 0.95);
   --White:hsl(240,100%,99%);
-  --heading-font-family:'Saira',Helvetica;
-  --text-font-family:'Lato', sans-serif; 
+  --heading-font-family:'Fredoka',Helvetica;
+  --text-font-family:'Urbanist', sans-serif;
+  --Purple:	hsl(301, 63%, 13%); 
+  --Pink:	hsl(322, 70%, 33%);
+  --Bleu:	hsl(174, 57%, 45%);
+  --Green:hsl(135, 36%, 62%);
+  --Grey:	hsl(0, 0%, 15%);
+  --Dark-Grey:	hsl(0, 0%, 5%);
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
 }
 
 body{
@@ -20,7 +31,7 @@ body{
 }
 
 h1, h2, h3 {
-color: var(--Primary-Light);
+color: var(--Purple);
 font-family: var(--heading-font-family);
 font-weight: bold;
 line-height: 1.5em;
@@ -28,7 +39,7 @@ margin-top: 0;
 margin-bottom: 1em;
 }
 h4{
-color: var(--Third-Light);
+color: var(--Bleu);
 font-family: var(--heading-font-family);
 font-weight: bold;
 line-height: 1.5em;
@@ -37,7 +48,7 @@ margin-bottom: 1em;
 font-size: 1em;
 }
 h5, h6{
-color: var(--Primary-Font-Light);
+color: var(--Black);
 font-family: var(--heading-font-family);
 font-weight: bold;
 margin-top: 0;
@@ -52,7 +63,7 @@ display: inline-block;
 position: relative;
 margin: 1.9em .7em .7em;
 padding: 0;
-color: var(--Primary-Light);
+color: var(--Purple);
 }
 
 
@@ -103,7 +114,7 @@ color: var(--Primary-Light);
   flex-direction: column;
   position: relative;
   align-items: center;
-  background-color: var(--Primary-Light);
+  background-color: var(--Purple);
   color: var(--White);
   height: 100vh;
   min-width: 200px;
@@ -241,7 +252,7 @@ color: var(--White);
    /* position:absolute;  */
       width: 100%;
       left:0;
-      background-color: var(--Primary-Light);
+      background-color: var(--Purple);
       height:50px;
   } 
 .sidebar.active-sidebar{
@@ -295,7 +306,7 @@ align-items: center;
     justify-content: center;
     margin:0;
     width: 100%;
-    background-color: var(--Primary-Light);
+    background-color: var(--Purple);
 } 
 .nav-list.active{
       display: flex;
@@ -368,7 +379,7 @@ align-items: center;
   display: block;
  height:100vh;
  z-index: 30;
- background-color: var(--Primary-Light);
+ background-color: var(--Purple);
 }
 }
 /* PAGE WRAPPER */
