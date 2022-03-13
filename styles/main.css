@@ -16,7 +16,7 @@
     --Contrast-Light:hsla(20, 18%, 23%, 0.95);
     --White:hsl(240,100%,99%);
     --heading-font-family:'Fredoka',Helvetica;
-    --text-font-family:'Urbanist', sans-serif;
+    --text-font-family:'Lato', sans-serif;
     --Purple:	hsl(301, 63%, 13%); 
     --Pink:	hsl(322, 70%, 33%);
     --Bleu:	hsl(174, 57%, 45%);
@@ -64,7 +64,7 @@
   position: relative;
   margin: 1.9em .7em .7em;
   padding: 0;
-  color: var(--Primary-Light);
+  color: var(--Purple);
   }
   
 
@@ -98,8 +98,8 @@
   .inner-page .border{
   width: 110px;
     height: 110px;
-    border-top: 3px solid var(--Primary-Light);
-    border-left: 3px solid var(--Primary-Light);
+    border-top: 3px solid var(--Purple);
+    border-left: 3px solid var(--Purple);
     left: 2em;
     top: 2em;
     display: inline-block;
@@ -129,7 +129,7 @@
     margin: 12px 0 0;
     font-size: 3.5em;
     line-height: 1.1em;
-    color: var(--Primary-Light);
+    color: var(--Purple);
     z-index: 1;
     font-family: var(--heading-font-family);
     text-transform: capitalize;
@@ -163,7 +163,7 @@
   }
   .card i{
   font-size: 3.5em;
-  color: var(--Primary-Light);
+  color: var(--Purple);
   }
   .card img{
   width: 4em;
@@ -214,12 +214,12 @@
     
     .info-list li a i{
     text-decoration: none;
-    color: var(--Primary-Light);
+    color: var(--Purple);
     margin-top: 1.5em;
     width: 34px;
     height: 34px;
     background-color: transparent;
-    border: 1px solid var(--Primary-Light);
+    border: 1px solid var(--Purple);
     text-align: center;
     font-size: 1.5em;
     padding: 5px 0;
@@ -455,7 +455,7 @@
     .progress-value {
       /* box-shadow: 0 10px 40px -10px var(--Secondary-Light); */
       border-radius: 100px;
-      background: var(--Primary-Light);
+      background: var(--Purple);
       height: .5em;
       width: 0;
       z-index: 1;
@@ -480,7 +480,7 @@
     top:-.3em;
     text-align: right;
     font-size: .8em;
-    color: var(--Primary-Light);
+    color: var(--Purple);
     font-weight: bold;
     font-family: var(--heading-font-family);
     }
@@ -680,7 +680,7 @@
     .label-pic{
         width: 8rem;
         height: 2.5rem;
-        background: var(--Primary-Light);
+        background: var(--Purple);
         position: relative;
         top:45%;
         right: -6rem;
@@ -796,7 +796,7 @@
     }
     
     .inner-page::-webkit-scrollbar-thumb {
-      background-color: var(--Primary-Light); /* color of the scroll thumb */
+      background-color: var(--Purple); /* color of the scroll thumb */
       transition:all 0.2s 0s ease-in;
       border-radius: 20px; /* roundness of the scroll thumb */
        /*border: 2px solid rgb(61, 61, 61); creates padding around scroll thumb */
@@ -804,7 +804,7 @@
     /* Works on Firefox */
     .inner-page * {
     scrollbar-width: 3px;
-    scrollbar-color: var(--Primary-Light)rgb(164, 164, 164);
+    scrollbar-color: var(--Purple)rgb(164, 164, 164);
     transition:all 0.2s 0s ease-in;
     cursor: pointer;
     }
@@ -822,7 +822,7 @@
     }
     
     *::-webkit-scrollbar-thumb {
-    background-color: var(--Primary-Light);
+    background-color: var(--Purple);
     border-radius: 20px;
     transition:all 0.2s 0s ease-in;
     /* border: 2px solid orange; */
@@ -871,7 +871,7 @@
     } */
     .filter:hover,
     .filter.active{
-    background-color: var(--Primary-Light);
+    background-color: var(--Purple);
     color: var(--White);
     font-weight: bold;
     transform: translateX(5%);
@@ -901,14 +901,14 @@
     }
     
     .project-description:hover, .portfolio-grid figure a{
-    background-color: var(--Primary-Light);
+    background-color: var(--Purple);
     color: var(--White);
     opacity: 1;
     transition: width .1s ease-in;
     } 
     
     .portfolio-grid img:hover{
-    background-color: var(--Primary-Light);
+    background-color: var(--Purple);
     }
     
     .portfolio-grid img {
@@ -1044,7 +1044,7 @@
 
 .carousel__caption a {
   text-decoration: none;
-  color: var(--Primary-Light);
+  color: var(--Purple);
 }
 
 .carousel{
@@ -1088,7 +1088,7 @@ transform: translateZ(0px);
   position: absolute;
   display: none;
   cursor: pointer;
-  background: var(--Primary-Light);
+  background: var(--Purple);
   top: 210px;
   left: 50px;
   width: 40px;
@@ -1153,7 +1153,7 @@ transform: translateZ(0px);
   border-radius: 50%;
   margin: 0 4px 0;
   background: var(--Primary-Font-Light);
-  border: 1px solid var(--Primary-Light);
+  border: 1px solid var(--Purple);
 }
 
 #carousel__slide--1:checked ~ .carousel__arrow--1 ~ .carousel__bullets li:nth-child(1),
