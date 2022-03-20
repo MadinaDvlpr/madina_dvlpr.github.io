@@ -22,26 +22,28 @@
   --Green:hsl(135, 36%, 62%);
   --Grey:	hsl(0, 0%, 15%);
   --Dark-Grey:	hsl(0, 0%, 5%);
+  --Light-Grey: hsl(240, 4%, 95%);
   --Black:	hsl(0, 0%, 0%);
   --White:hsl(220, 23%, 97%);
 }
 
 body{
   height:100vh;
+  background-color: var(--Light-Grey);
 }
 
 h1, h2, h3 {
 color: var(--Purple);
 font-family: var(--heading-font-family);
-font-weight: bold;
+font-weight: 500;
 line-height: 1.5em;
 margin-top: 0;
 margin-bottom: 1em;
 }
 h4{
-color: var(--Bleu);
+color: var(--Pink);
 font-family: var(--heading-font-family);
-font-weight: bold;
+font-weight: 600;
 line-height: 1.5em;
 margin-top: 0;
 margin-bottom: 1em;
@@ -50,7 +52,7 @@ font-size: 1em;
 h5, h6{
 color: var(--Black);
 font-family: var(--heading-font-family);
-font-weight: bold;
+font-weight: 600;
 margin-top: 0;
 margin-bottom: 1em;
 font-size: .6em;
