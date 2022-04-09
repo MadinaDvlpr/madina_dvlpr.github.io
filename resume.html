@@ -4,257 +4,316 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/new.css">
     <title>PARCOURS | MADINA DEV</title>
 </head>
-
 <body>
-  <header class="sidebar" id="sidebar">
-    <!-- Mobile Header -->
-    <nav class="navbar" id="navbar">
-        <div id="icon-burger">
-        <div class="hamburger burger"></div>
-        </div>
-    <div class="header-branding">
-    <img class="header-picture" src="img/Logo-White.png" alt="profile picture">
-               <!-- <p class="sidebar-title">Magdalena Larmet</p> -->
-    <div class="brand-title">Magdalena Larmet</div>
-         <h1>UI Designer</h1>
+  <header>  
+    
+    <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
+    <nav class="navbar">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <nav id="navigation" class="navigation">
-    <div class="nav-list" id="nav-list">
-    <ul>
-        <li><a href="./index.html" class="nav-links"><i class="fas fa-home" aria-hidden="true"></i>ACCUEIL</a></li>
-        <li><a href="./about.html" class="nav-links"><i class="fas fa-address-card" aria-hidden="true"></i> à PROPOS</a></li>
-        <li><a href="./resume.html" class="nav-links"><i class="fas fa-map-signs" aria-hidden="true"></i>PARCOURS</a></li>
-        <li><a href="./portfolio.html" class="nav-links"><i class="fas fa-images" aria-hidden="true"></i>PORTFOLIO</a></li>
-        <li><a href="./contact.html" class="nav-links"><i class="fas fa-phone-alt" aria-hidden="true"></i>CONTACT</a></li>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
+        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
+        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
+        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
     </ul>
+  </nav>
+  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
+    </header>
+  
+<!-- ------------ -->
+<!-- Social links -->
+<div class="social">
+  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
+  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<!-- ------------ -->
+
+
+
+<section class="resume-section">
+  <h2>Mon parcours</h2>
+      <p class="title">Formation et Emplois</p>
+<div class="resume-container">
+ <div class="grid-col">
+    <div class="block-title">
+     <h3>Formation</h3>
     </div>
-    <div class="social-header" id="social-header">
-     <ul class="social-links">
-         <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-         <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-         <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-         <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-         </ul>
-     </div>
-     </nav>
-   </header>
-     
+    <div class="timeline">
+       <!-- Evenement 1 -->
+       <div class="timeline-event te-primary">
+         <h5 class="event-date">2022</h5>
+         <h4 class="event-name">Licence Concepteur Designer User Interface</h4>
+         <span class="event-description">LA MANU | Noyon</span>
+         <p>Programmation front-end (HTML5, CSS3, Javascript)
+           <br>
+         
+           Web design (Illustrator, Indesign, Photoshop, After effect, Première Pro)
+         
+       </div>
+       <!-- Evenement 2 -->
+       <div class="timeline-event te-primary">
+           <h5 class="event-date">2017</h5>
+           <h4 class="event-name">MBA E-Business</h4>
+           <span class="event-description">MBA ESG | Paris</span>
+           <p>Manager un projet de développement digital
+             <br>
+             Réaliser des campagnes digitales<br>
+             Mobiliser des connaissances en langages informatiques et gestion de bases de données   
+           <br>
+             Optimiser la relation client et les stratégies commerciales sur le web
+           <br>
+             Audit et Veille.</p>
+         </div>
+       <!-- Evenement 3 -->
+         <div class="timeline-event te-primary">
+           <h5 class="event-date">2009</h5>
+           <h4 class="event-name">Master Business Unit Manager</h4>
+           <span class="event-description">ISEE | Paris</span>
+           <p>Gestion d'unité commerciale
+           <br>
+           Commerce international</p>
+         </div>
+         <!-- Evenement 4 -->
+         <div class="timeline-event te-primary">
+           <h5 class="event-date">2006</h5>
+           <h4 class="event-name">BTS Assistante de Direction</h4>
+           <span class="event-description">KRYSALIS FRANCE | Compiègne</span>
+           <p>Travaux bureautique
+         <br>
+         gestion de base de données
+       <br>
+       Gestion évènementiel</p>
+         </div>
+<!-- Evenement 5 -->
+<div class="timeline-event te-primary">
+  <h5 class="event-date">2002 - 2004</h5>
+  <h4 class="event-name">hypokhâgne Lettres</h4>
+  <span class="event-description">Lycée Pierre d'Ailly | Compiègne</span>
+  <p>Lettres et littérature française, anglaise et espagnol
+<br>
+Langues : Anglais, Espagnol
+<br>
+Civilisation</p>
+</div>
+          <!-- Evenement 6 -->
+          <div class="timeline-event te-primary">
+            <h5 class="event-date">2001</h5>
+            <h4 class="event-name">BAC Littéraire</h4>
+            <span class="event-description">Lycée Mireille Grenet | Compiègne</span>
+            <p>Littérature
+          <br>
+          Langues : Anglais, Espagnol, Italien
+          <br>
+          Philosophie</p>
+          </div>
 
 
-    <main>
-        <section class="page-wrapper moveToRight">
-            <div class="inner-page">  
-            <div class="page"  id="resume">
-                          
-                <div class="page-title resume">
-                    <h2>Curriculum Vitae</h2>
-                    <h3 class="title-desc">Développeur Front-End</h3>
+
+
+       </div>
+     </div>        
+       <!-- FIN DU BLOCK FORMATION -->
+       
+       <div class="grid-col">
+           <div class="block-title">
+               <h3>Experience</h3>
+             </div>
+             <div class="timeline">
+               <!-- Evenement 1 -->
+               <div class="timeline-event te-primary">
+                 <h5 class="event-date">Juin 2019 - Jan 2021</h5>
+                 <h4 class="event-name">Auto-entrepreneur</h4>
+                 <span class="event-description">The Afro Lab. | Compiègne</span>
+                 <p>Lancement de concept de marque Afro fusion<br>
+                   Création sur demande<br>
+                   Création uniques entièrement fait main
+               </p>
+               </div>
+               <!-- Evenement 2 -->
+               <div class="timeline-event te-primary">
+                 <h5 class="event-date">Juin 2018 - Mars 2019</h5>
+                 <h4 class="event-name">Chargée de Web Marketing</h4>
+                 <span class="event-description">Webdentiste | Paris</span>
+                 <p>Mise en application de la stratégie marketing digitale<br>
+                 Gestion et tracking des campagnes emailing et adwords<br>
+                 Gestion des reseaux sociaux
+               </p>
+               </div>
+               <!-- Evenement 3 -->
+               <div class="timeline-event te-primary">
+                 <h5 class="event-date">Fév 2018 - Juin 2018</h5>
+                 <h4 class="event-name">Key Account Manager</h4>
+                 <span class="event-description">Maxiweb | Paris</span>
+                 <p>Gestion d'un protefeuille de campagnes<br>
+                 Responsable de la réalisation des objectifs<br>
+                 Prise de contact régulière avec les affiliés</p>
+               </div>
+
+               <!-- Evenement 4 -->
+               <div class="timeline-event te-primary">
+                 <h5 class="event-date">Mai 2017 - Nov 2017</h5>
+                 <h4 class="event-name">Chef de projet Webmarketing - stagiaire</h4>
+                 <span class="event-description">Habiteo | Paris</span>
+                 <p>Réalisation d'un audit digital (technique, notoriété, sémantique)<br>
+                 Définition de la stratégie emailing<br>
+                 Optimisation du site Web<br>
+                 Mise en place des nouveaux CRM & ERP</p>
+               </div>
+
+               <!-- Evenement 5 -->
+               <div class="timeline-event te-primary">
+                <h5 class="event-date">Déc 2014 - Mai 2015</h5>
+                <h4 class="event-name">Account Manager Key Account</h4>
+                <span class="event-description">Home Away UK | Londres</span>
+                <p>Implémentation d'un nouveau système de gestion des réservations auprès des promoteurs (Pay Per Booking) <br>
+                  Gestion et suivi des problèmes techniques <br>
+                  Gestion de protefeuille : développement commecial et fidélisation client (outil Salesforce)<br>
+                </p>
+              </div>
+
+ <!-- Evenement 6 -->
+ <div class="timeline-event te-primary">
+  <h5 class="event-date">Sept 2012 - Sept 2014</h5>
+  <h4 class="event-name">Chef de projet</h4>
+    <span class="event-description">Netnames | Londres</span>
+  <p>Recueil des besoins, cadrage et suivi des projets<br>
+    Paramétrage et migration de DNS, déploiements de certificats SSL <br>
+    Gestion et enregistrements des noms de domaine <br>
+  </p>
+</div>
+
+             </div>
+           </div>
+
+           <div class="grid-col">
+             <h1 class="title">Compétences</h1>
+
+             <h2 class="progress-title">Développement Front</h2>
+            <div class="skills-info">
+              <h4>Html</h4>                               
+              <div class="progress-resume">
+                  <div class="progress-value html">
+                      <small>90%</small>
+                  </div>
                 </div>
-                <div class="page-content grid-layout-3-col">
-                    <!-- BLOCK FORMATION -->
-                 <div class="grid-col">
-                 <div class="block-title">
-                  <h3>Formation</h3>
-                 </div>
-                 <div class="timeline">
-                    <!-- Evenement 1 -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2022</h5>
-                      <h4 class="event-name">Licence Concepteur Designer User Interface</h4>
-                      <span class="event-description">LA MANU | Noyon</span>
-                      <p>Programmation front-end (HTML5, CSS3, Javascript)
-                        <br>
-                      
-                        Web design (Illustrator, Indesign, Photoshop, After effect, Première Pro)
-                      
-                    </div>
-                    <!-- Evenement 2 -->
-                    <div class="timeline-event te-primary">
-                        <h5 class="event-date">2017</h5>
-                        <h4 class="event-name">MBA E-Business</h4>
-                        <span class="event-description">MBA ESG | Paris</span>
-                        <p>Manager un projet de développement digital
-                          <br>
-                          Réaliser des campagnes digitales<br>
-                          Mobiliser des connaissances en langages informatiques et gestion de bases de données   
-                        <br>
-                          Optimiser la relation client et les stratégies commerciales sur le web
-                        <br>
-                          Audit et Veille.</p>
-                      </div>
-                    <!-- Evenement 3 -->
-                      <div class="timeline-event te-primary">
-                        <h5 class="event-date">2009</h5>
-                        <h4 class="event-name">Master Business Unit Manager</h4>
-                        <span class="event-description">ISEE | Paris</span>
-                        <p>Gestion d'unité commerciale
-                        <br>
-                        Commerce international</p>
-                      </div>
-                      <!-- Evenement 4 -->
-                      <div class="timeline-event te-primary">
-                        <h5 class="event-date">2006</h5>
-                        <h4 class="event-name">BTS Assistante de Direction</h4>
-                        <span class="event-description">KRYSALIS FRANCE | Compiègne</span>
-                        <p>Travaux bureautique
-                      <br>
-                      gestion de base de données
-                    <br>
-                    Gestion évènementiel</p>
-                      </div>
-                    </div>
-                  </div>        
-                    <!-- FIN DU BLOCK FORMATION -->
-                    
-                    <div class="grid-col">
-                        <div class="block-title">
-                            <h3>Experience</h3>
-                          </div>
-                          <div class="timeline">
-                            <!-- Evenement 1 -->
-                            <div class="timeline-event te-primary">
-                              <h5 class="event-date">Juin 2019 - Jan 2021</h5>
-                              <h4 class="event-name">Auto-entrepreneur</h4>
-                              <span class="event-description">The Afro Lab. | Compiègne</span>
-                              <p>Lancement de concept de marque Afro fusion<br>
-                                Création sur demande<br>
-                                Création uniques entièrement fait main
-                            </p>
-                            </div>
-                            <!-- Evenement 2 -->
-                            <div class="timeline-event te-primary">
-                              <h5 class="event-date">Juin 2018 - Mars 2019</h5>
-                              <h4 class="event-name">Chargée de Web Marketing</h4>
-                              <span class="event-description">Webdentiste | Paris</span>
-                              <p>Mise en application de la stratégie marketing digitale<br>
-                              Gestion et tracking des campagnes emailing et adwords<br>
-                              Gestion des reseaux sociaux
-                            </p>
-                            </div>
-                            <!-- Evenement 3 -->
-                            <div class="timeline-event te-primary">
-                              <h5 class="event-date">Fév 2018 - Juin 2018</h5>
-                              <h4 class="event-name">Key Account Manager</h4>
-                              <span class="event-description">Maxiweb | Paris</span>
-                              <p>Gestion d'un protefeuille de campagnes<br>
-                              Responsable de la réalisation des objectifs<br>
-                              Prise de contact régulière avec les affiliés</p>
-                            </div>
-                            <div class="timeline-event te-primary">
-                              <h5 class="event-date">Mai 2017 - Nov 2017</h5>
-                              <h4 class="event-name">Chef de projet Webmarketing - stagiaire</h4>
-                              <span class="event-description">Habiteo | Paris</span>
-                              <p>Réalisation d'un audit digital (technique, notoriété, sémantique)<br>
-                              Définition de la stratégie emailing<br>
-                              Optimisation du site Web<br>
-                              Mise en place des nouveaux CRM & ERP</p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- BLOCK SKILLS -->
-                        <div class="grid-col">
-                          <div class="block-title">
-                            <h3>Design Skills</h3>
-                          </div>
-                          <div class="skills-info">
-                            <h4>Illustrator</h4>                               
-                            <div class="progress">
-                                <div class="progress-value illustrator">
-                                    <small>50%</small>
-                                </div>
-                              </div>
-                            <h4>Indesign *</h4>
-                            <div class="progress">
-                                <div class="progress-value indesign">
-                                    <small>50%</small>
-                                </div>
-                              </div>
-      
-                            <h4>Photoshop</h4>
-                            <div class="progress">
-                                <div class="progress-value photoshop">
-                                    <small>30%</small>
-                                </div>
-                              </div> 
-                          </div>
-      
-                          <div class="block-title">
-                            <h3>Coding Skills</h3>
-                          </div>
-                          <div class="skills-info">
-                            <h4>HTML5</h4>                               
-                            <div class="progress">
-                                <div class="progress-value html-skill">
-                                    <small>90%</small>
-                                </div>
-                              </div>
-      
-                            <h4>CSS3</h4>
-                            <div class="progress">
-                                <div class="progress-value css-skill">
-                                    <small>80%</small>
-                                </div>
-                              </div>
-      
-                            <h4>Javascript</h4>
-                            <div class="progress">
-                                <div class="progress-value js-skill">
-                                    <small>40%</small>
-                                </div>
-                              </div>
-      
-                            <h4>Wordpress</h4>
-                            <div class="progress">
-                                <div class="progress-value wp-skill">
-                                    <small>70%</small>
-                                </div>
-                              </div>
-      
-                            <h4>PHP</h4>
-                            <div class="progress">
-                                <div class="progress-value php-skill">
-                                    <small>20%</small>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="small">
-                            * en cours d'acquisition
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          <div class="download-cv-block">
-                            <a class="button bg-slide" target="_blank" href="#">Télécharger CV</a>
-                          </div>
-                        </div>
-                      </div>
+              <h4>Css</h4>
+              <div class="progress-resume">
+                <div class="progress-value css">
+                      <small>60%</small>
+                  </div>
+                </div>
+    
+              <h4>Javascript</h4>
+              <div class="progress-resume">
+                <div class="progress-value js">
+                      <small>50%</small>
+                  </div>
+                </div> 
             </div>
-        </section>
 
-    </main>
 
-    <footer id="footer">
-      <div class="social-footer" id="social-footer">
-        <ul class="social-links-footer">
-            <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-            <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        </ul>
-      </div>
-      <small>&#169; Made by Magda-Dev</small>
-    </footer>
-    <script src="js/burger.js"></script>
-    <script src="js/main-nav.js"></script>
-     <!-- <script src="js/navigation.js"></script>  -->
-    <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
-</body>
-</html>
+            <h2 class="progress-title">Webdesign</h2>
+            <div class="skills-info">
+              <h4>Illustrator</h4>                               
+              <div class="progress-resume">
+                  <div class="progress-value illustrator">
+                      <small>50%</small>
+                  </div>
+                </div>
+              <h4>Indesign</h4>
+              <div class="progress-resume">
+                <div class="progress-value indesign">
+                      <small>50%</small>
+                  </div>
+                </div>
+    
+              <h4>Photoshop</h4>
+              <div class="progress-resume">
+                <div class="progress-value photoshop">
+                      <small>40%</small>
+                  </div>
+                </div> 
+
+                <h4>Premiere Pro</h4>
+              <div class="progress-resume">
+                <div class="progress-value premiere">
+                      <small>40%</small>
+                  </div>
+                </div> 
+
+                <h4>After Effects</h4>
+              <div class="progress-resume">
+                <div class="progress-value afterEffects">
+                      <small>40%</small>
+                  </div>
+                </div> 
+
+
+            </div>
+
+
+            <h2 class="progress-title">Webmarketing et Gestion de projet</h2>
+            <div class="skills-info">
+              <h4>Optimisation SEO</h4>                               
+              <div class="progress-resume">
+                  <div class="progress-value seo">
+                      <small>80%</small>
+                  </div>
+                </div>
+              <h4>Agile Scrum</h4>
+              <div class="progress-resume">
+                <div class="progress-value scrum">
+                      <small>80%</small>
+                  </div>
+                </div>
+    
+              <h4>Google Analytics</h4>
+              <div class="progress-resume">
+                <div class="progress-value analytics">
+                      <small>50%</small>
+                  </div>
+                </div> 
+            </div>
+
+
+
+
+
+
+    
+            <a href="./assets/pdf/magdalena-larmet-cv.pdf">  <button class="btn">Télécharger CV</button></a>
+
+           </div>
+
+<div>
+
+          
+
+            </div>
+          </section>
+
+           <footer>
+            <p>2022 By Magdalena Designs. </p>
+                </footer>
+            
+            
+                <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <script src="assets/js/app.js"></script>
+               
+            </body>
+            </html>

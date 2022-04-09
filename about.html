@@ -4,170 +4,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/new.css">
     <title>A PROPOS | MADINA DEV</title>
 </head>
-
 <body>
-    <header class="sidebar" id="sidebar">
-        <!-- Mobile Header -->
-        <nav class="navbar" id="navbar">
-            <div id="icon-burger">
-            <div class="hamburger burger"></div>
-            </div>
-        <div class="header-branding">
-            <img class="header-picture" src="img/Logo-White.png" alt="profile picture">
-            <!-- <p class="sidebar-title">Magdalena Larmet</p> -->
-        <div class="brand-title">Magdalena Larmet</div>
-             <h1>UI Designer</h1>
-        </div>
-        <nav id="navigation" class="navigation">
-        <div class="nav-list" id="nav-list">
-        <ul>
-            <li><a href="./index.html" class="nav-links"><i class="fas fa-home" aria-hidden="true"></i>ACCUEIL</a></li>
-            <li><a href="./about.html" class="nav-links"><i class="fas fa-address-card" aria-hidden="true"></i> à PROPOS</a></li>
-            <li><a href="./resume.html" class="nav-links"><i class="fas fa-map-signs" aria-hidden="true"></i>PARCOURS</a></li><li><a href="./portfolio.html" class="nav-links"><i class="fas fa-images" aria-hidden="true"></i>PORTFOLIO</a></li>
-            <li><a href="./contact.html" class="nav-links"><i class="fas fa-phone-alt" aria-hidden="true"></i>CONTACT</a></li>
-        </ul>
-        </div>
-        <div class="social-header" id="social-header">
-         <ul class="social-links">
-             <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-             <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-             <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-             <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-             </ul>
-         </div>
-         </nav>
-       </header>
-     
+  <header>  
+    
+    <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
+    <nav class="navbar">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
+        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
+        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
+        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
+    </ul>
+  </nav>
+  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
+    </header>
+  
 
-    <main>
-        <section class="page-wrapper moveToTop">
-            <div class="inner-page">  
-                <div class="border"></div>
-            <div class="page"  id="about">
-                          
-                <div class="page-title about-page">
-                    <h2>A propos de moi</h2>
-                    <h3 class="title-desc">Créative, Bilingue, Gourmande</h3>
+<!-- ------------ -->
+<!-- Social links -->
+<div class="social">
+  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
+  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<!-- ------------ -->
+    
+
+   
+
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-description">
+      <h1>Hello, je suis Magdalena</h1>
+      <h2>Designer d'interface et developpeur front end</h2>
+    
+      <p>
+        Le début de mon parcours professionnel a été marqué par le developpement commercial. J’ai occupé des fonctions de cadre commercial en France et en Angleterre où j’ai vecu pendant plus de 5 ans. Parallèlement, je me suis découvert une appétance pour les languages informatiques. En 2018   j'ai ainsi validé un MBA Ebusiness à l'ESG où j'ai approfondi mes connaissances en développement front et en marketing digital. Mes objectifs à court terme sont d'acquérir les compétences d'un développeur Fullstack.</p>
+   
+    </div>
+    <div class="hero-image">
+    <img id="main-hero" src="assets/img/hero-img.png" alt="hero-image">
+    
+      <img  id="hero-graphic-1" src="assets/img/hero-home.png" alt="hero-image">
+    
+      <img id="hero-graphic-2" src="assets/img/square-pink.png" alt="hero-image">
+    
+      <img  id="hero-graphic-3" src="assets/img/hero-home-2.png" alt="hero-image">
+    
+    </div>
+          </div>
+</section>
+ 
+
+<section class="speciality-section">
+  <h2>Ce que je fais</h2>
+  <p class="title">Mes compétences</p>
+
+<div class="speciality-container">
+
+<div class="illustration">
+  <img src="assets/img/illustration-cv.png" alt="">
+</div>
+
+
+  <div class="cards-container card-item">
+    <div class="cards-col">
+        <div class="card-box">
+            <div class="i_div">
+              <ion-icon name="settings"></ion-icon>
+            </div>
+            <h3><a href="javascript:void(0);">Web Development</a></h3>
+            <h5>de A à Z</h5>
+            <p>
+               Création de composants et sites web depuis la programmation jusqu'aux créations visuelles.
+            </p>
+        </div>
+    </div>
+
+    <div class="cards-col">
+            <div class="card-box">
+                <div class="i_div">
+                  <ion-icon name="brush"></ion-icon>
                 </div>
-                <div class="page-content grid-layout-3-col">
-                    <div class="profile-picture tilt-effect grid-col">
-                       <img src="img/profile-picture.png" alt="ma photo de profile">
-                            </div>
-                            <div class="grid-col overview-text">
-                                <h3>Etudiante en UI Design à la recherche d'un stage de 2 mois</h3>
-                                <p>Ex cadre commercial dans le domaine du digital, j'ai fais mes débuts en programmation en autodidacte. Dès lors, j'ai souhaité faire évoluer ma carrière vers des fonctions de UI Designer.</p>
-                                <p>Je me prépare actuellement au titre de Concepteur Designer User Interface. Je recherche un stage avec une dominante front-end development de préférence.</p>
-                            </div>
-                            <div class="grid-col">
-                                <ul class="info-list">
-                                          
-                                    <li><span class="title">Pays</span><span class="value">France</span></li>
-                                    <li><span class="title">Région</span><span class="value">Ile-de-France, Oise</span></li>
-                                    <li><span class="title">Email</span><span class="value"><a href="mailto:magdalarmet@gmail.com.com">magdalarmet@gmail.com</a></span></li>
-                                    <li><span class="title">Stage | Apprentissage</span><span class="value available">Disponible</span></li>
-                                  </ul>
-                                  <div>
-                                  <ul class="info-list socials">
-                                    <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-                                <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-                                  </ul>
-                                </div>
-                            </div>
-                            </div>
-                          <!-- Bloc Service  -->
-<div class="block-even">
-    <div class="block-title">
-        <h3>Mes Compétences</h3>
-    </div>
-    <div class="cards-container">
-       
-        <div class="card">
-            <img src="img/front-dev.png" alt="">
-            <h4>Developpement Front-End</h4>
-            <p>Programmation de composants & web applications dynamiques.</p>
-        </div>
-
-        <div class="card">
-            <img src="img/webdesign.png" alt="">
-            <h4>Web Design</h4>
-            <p>Création de branding, design de sites internet & création de supports prints.</p>
-        </div>
-
-        <div class="card">
-            <img src="img/ecommerce.png" alt="">
-            <h4>E-Commerce</h4>
-            <p>Création de site E-commerce responsives (Wordpress, Woocommerce et Shopify).</p>
-        </div>
-
-        <div class="card">
-            <img src="img/gestion.png" alt="">
-            <h4>Gestion de Projet</h4>
-            <p>Travail en equipe & gestion de projet méthode agile Scrum.</p>
-        </div>
-    </div>
-</div>
-
-<div class="block-even">
-    <div class="block-title">
-        <h3>Fun Facts</h3>
-    </div>
-    <div class="cards-container">
-        <div class="card fun">
-            <img src="img/jack-russel.png" alt="">
-            <h4>Happy Dog</h4>
-            <span class="fun-value">1</span>
-        </div>
-        <div class="card fun">
-            <img src="img/avocado.png" alt="">
-                      <h4>Heures Travaillées</h4>
-                      <span class="fun-value">6,256</span>
-        </div>
-        <div class="card fun">
-            <img src="img/choux-creme.png" alt="">
-                      <!-- <i class="pe-7s-icon pe-7s-medal"></i> -->
-                       <h4>Tutos Suivis</h4>
-                      <span class="fun-value">157</span>
-        </div>
-        <div class="card fun">
-            <img src="img/ROLLER-ICON.png" alt="">
-                      <h4>Choux Préparés</h4>
-                      <span class="fun-value">2,100</span>
-        </div>
-    </div>
-</div>
-                                
-                    </div>
-            </div> 
+                <h3><a href="javascript:void(0);">Identité de marque</a></h3>
+                <h5>Branding</h5>
+                <p>
+                    Création de logos et d'identité de marque.
+                </p>
             </div>
-        </section>
-
-    </main>
-
-    <footer id="footer">
-        <div class="social-footer" id="social-footer">
-          <ul class="social-links-footer">
-              <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-              <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-          </ul>
         </div>
-        <small>&#169; Made by Magda-Dev</small>
-      </footer>
+
+    <div class="cards-col">
+        <div class="card-box">
+            <div class="i_div">
+              <ion-icon name="logo-buffer"></ion-icon>
+            </div>
+            <h3><a href="javascript:void(0);">UI design</a></h3>
+            <h5>Design créatif</h5>
+            <p>
+                Création de solutions digitales avec une logique user friendly.
+            </p>
+        </div>
+    </div>
+
+    <div class="cards-col">
+        <div class="card-box">
+            <div class="i_div">
+              <ion-icon name="phone-portrait"></ion-icon>
+            </div>
+            <h3><a href="javascript:void(0);">Application</a></h3>
+            <h5>Web app</h5>
+            <p>
+                Création d'applications web responsives et dynamiques.
+            </p>
+        </div>
+    </div>
+
+    <div class="cards-col">
+      <div class="card-box">
+          <div class="i_div">
+              <i class="fas fa-hashtag"></i>
+          </div>
+          <h3><a href="javascript:void(0);">Social Media</a></h3>
+          <h5>Stratégie digitale</h5>
+          <p>
+              Définition de stratégie réseaux sociaux particulièrement sur Instagram.
+          </p>
+      </div>
+  </div>
+
+    <div class="cards-col">
+        <div class="card-box">
+            <div class="i_div">
+              <ion-icon name="stats-chart"></ion-icon>
+            </div>
+            <h3><a href="javascript:void(0);">Search Engine Optimisation</a></h3>
+            <h5>page rank</h5>
+            <p>Gestion de traffic et analyse des données via la suite google.
+            </p>
+        </div>
+    </div>
+</div>
 
 
-    <script src="js/burger.js"></script>
-     <script src="js/main-nav.js"></script> 
-     <!-- <script src="js/navigation.js"></script>  -->
+
+</div>
+
+</section>
+
+
+<section class="env-section">
+  <h2>Comment je travaille</h2>
+  <p class="title">Mon Environnement</p>
+
+
+
+
+  <h3>Développement Front</h3>
+  <div class="env-line">
+  <div class="text-icon"><img src="assets/img/html5.png" alt="logo html 5">HTML5</div>
+    <div class="text-icon"><img src="assets/img/css3.png" alt="logo css 3">CSS3</div>
+    <div class="text-icon"><img src="assets/img/javascript.png" alt="logo javascript">Javascript</div>
+    <div class="text-icon"><img src="assets/img/github.png" alt="logo github">Github</div>
+    <div class="text-icon"><img src="assets/img/wordpress.png" alt="logo wordpress">Wordpress</div>
+    <div class="text-icon"><img src="assets/img/bootstrap.png" alt="logo bootstrap">Bootstrap</div>
+  </div>
+
+  <h3>Web Design</h3>
+  <div class="env-line col">
+  <div class="text-icon"><img src="assets/img/illustrator.png" alt="logo illustrator">Illustrator</div>
+    <div class="text-icon"><img src="assets/img/adobe-xd.png" alt="logo adobe XD">Adobe XD</div>
+    <div class="text-icon"><img src="assets/img/indesign.png" alt="logo indesign">Indesign</div>
+    <div class="text-icon"><img src="assets/img//photoshop.png" alt="logo photoshop">Photoshop</div>
+
+  </div>
+
+  <h3>Marketing digital</h3>
+  <div class="env-line col">
+  <div class="text-icon"><img src="assets/img/adwords.png" alt="logo adwords">Adwords</div>
+    <div class="text-icon"><img src="assets/img/google-analytics.png" alt="logo Google Analytics">Google Analytics</div>
+    <div class="text-icon"><img src="assets/img/windows.png" alt="logo windows">Windows</div>
+    <div class="text-icon"><img src="assets/img/hootsuite.png" alt="logo Hootsuite">Hootsuite</div>
+  </div>
+
+
+</section>
+<section class="next-section">
+  <h2>Prochaine étape</h2>
+  <p class="title">Développeur Fullstack</p>
+  <div class="next-container">
+    <div class="quote">
+      <img id="quote-right" src="assets/img/citation-droite.png" alt="quotes marks">
+      <img id="quote-left" src="assets/img/citation-gauche.png" alt="quotes marks">
+<p> Mon objectif de carrière est de pouvoir mener des projets web de bout en bout. Afin d'être capable de coder aussi bien sur la partie front que back, je souhaite acquérir les connaissances nécessaires pour développer des composants et site web. C'est dans cette logique que je souhaite suivre le cursus Mastère Fullstack en alternance à l'Efrei. Je recherche une entreprise d'accueil dans laquelle je pourrais démontrer et renforcer mes compétences techniques.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="fun-section">
+  <h2>Ce que j'aime faire</h2>
+  <p class="title">Mes Loisirs</p>
+  <div class="fun-container">
+  <div class="fun-fact">
+  <img src="assets/img/rollerskating.png" alt="illustration rollerskates">
+  <p>Rollerdance</p>
+  </div>
+  <div class="fun-fact">
+    <img src="assets/img/cooking.png" alt="illustration cuisiner">
+   
+  <p>Pâtisserie</p>
+  </div>
+  <div class="fun-fact">
+    <img src="assets/img/couture.png" alt="illustration couture">
+    
+  <p>Couture</p>
+  </div>
+</div>
+</section>
+
+
+
+<section class="follow-section">
+  <p class="title">Gardons le contact</p>
+  <p >Pour toute demande de collaboration.</p>
+
+  <div class="follow-container">
+
+    <div class="follow-description">
+<p> Contactez moi par mail ou via les réseaux sociaux</p>
+<span class="cta">Contact <a href="./contact.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>
+    </div>
+    <div class="follow-grid">
+      <img class="grid-item-h" src="assets/img/projet1.jpg" alt="">
+      <img class="grid-item-h" src="assets/img/projet2.jpg" alt="">
+      <img class="grid-item-h" src="assets/img/projet3.jpg" alt="">
+      <img class="grid-item-h" src="assets/img/projet4.jpg" alt="">
+      <img class="grid-item-h" src="assets/img/projet5.jpg" alt="">
+      <img class="grid-item-h" src="assets/img/projet6.jpg" alt="">
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <footer>
+<p>2022 By Madina Designs. </p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+   
+
     <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

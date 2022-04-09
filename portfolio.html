@@ -4,319 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/styleNew.css">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
-    <link rel="stylesheet" href="styles/animations.css">
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
-
-    <title>NAVIGATION AJAX | MAGDALENA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/new.css">
+    <title>Document</title>
 </head>
-
 <body>
-  <header class="sidebar" id="sidebar">
-    <!-- Mobile Header -->
-    <nav class="navbar" id="navbar">
-        <div id="icon-burger">
-        <div class="hamburger burger"></div>
-        </div>
-    <div class="header-branding">
-      <img class="header-picture" src="img/Logo-White.png" alt="profile picture">
-      <!-- <p class="sidebar-title">Magdalena Larmet</p> -->
-    <div class="brand-title">Magdalena Larmet</div>
-         <h1>UI Designer</h1>
+  <header>  
+    
+    <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
+    <nav class="navbar">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <nav id="navigation" class="navigation">
-    <div class="nav-list" id="nav-list">
-    <ul>
-        <li><a href="./index.html" class="nav-links"><i class="fas fa-home" aria-hidden="true"></i>ACCUEIL</a></li>
-        <li><a href="./about.html" class="nav-links"><i class="fas fa-address-card" aria-hidden="true"></i> à PROPOS</a></li>
-        <li><a href="./resume.html" class="nav-links"><i class="fas fa-map-signs" aria-hidden="true"></i>PARCOURS</a></li><li><a href="./portfolio.html" class="nav-links"><i class="fas fa-images" aria-hidden="true"></i>PORTFOLIO</a></li>
-        <li><a href="./contact.html" class="nav-links"><i class="fas fa-phone-alt" aria-hidden="true"></i>CONTACT</a></li>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
+        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
+        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
+        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
     </ul>
-    </div>
-    <div class="social-header" id="social-header">
-     <ul class="social-links">
-         <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-         <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-         <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-         <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-         </ul>
-     </div>
-     </nav>
-   </header>
+  </nav>
+  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
+    </header>
+  
+<!-- ------------ -->
+<!-- Social links -->
+<div class="social">
+  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
+  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<!-- ------------ -->
+    
 
+   
+    <section class="portfolio-section">
+      <h2>Mon portfolio</h2>
+      <p class="title">Projets finalisés</p>
+      <div class="filters">
+        <!-- Portfolio filter -->
+  <ul id="portfolio_filters" class="portfolio-filters">
+    <li class="filter active" data-tags="all">
+      <a class="filter-btn active" >Tout</a>
+    </li>
+    <li class="filter" data-tags="web">
+      <a class="filter-btn">Site Web</a>
+    </li>
+    <li class="filter" data-tags="app">
+      <a class="filter-btn">App</a>
+    </li>
+    <li class="filter" data-tags="design">
+      <a class="filter-btn">Design</a>
+    </li>
+    <li class="filter" data-tags="video">
+      <a class="filter-btn">Vidéo</a>
+    </li>
+  </ul>
+  <!-- End of Portfolio filter -->
+ </div>
+  
+      <div class="grid">
+        <div class="img-wrapper portfolio-item" data-tags='["all", "design"]'>
+          <img class="zoom" src="assets/img/portrait-vectoriel.png" alt="">
+          <div class="content fade">
+            <h5 class="name">Portrait Vectoriel</h5>
 
-    <main>
-        <section class="page-wrapper moveToLeft">
-            <div class="inner-page">  
-                <div class="border"></div> 
-            <div class="page"  id="portfolio">
-                          
-                <div class="page-title">
-                    <h2>PORTFOLIO PAGE</h2>
-                    <h3 class="title-desc">Créative, Bilingue, Gourmande</h3>
-
-                </div>
-                
-                <div class="page-portfolio">
-                 <div class="filters">
-                        <!-- Portfolio filter -->
-                  <ul id="portfolio_filters" class="portfolio-filters">
-                    <li class="filter active" data-tags="all">
-                      <a class="filter-btn active" >Tout</a>
-                    </li>
-                    <li class="filter" data-tags="web">
-                      <a class="filter-btn">Site Web</a>
-                    </li>
-                    <li class="filter" data-tags="app">
-                      <a class="filter-btn">App</a>
-                    </li>
-                    <li class="filter" data-tags="design">
-                      <a class="filter-btn">Design</a>
-                    </li>
-                    <li class="filter" data-tags="video">
-                      <a class="filter-btn">Vidéo</a>
-                    </li>
-                  </ul>
-                  <!-- End of Portfolio filter -->
-                 </div>
-
-                  <!-- Portfolio Grid -->
-                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-
-                    <!-- Portfolio Item 1 -->
-                    <figure class="portfolio-item" data-tags='["all", "web"]'>
-                      <a href="projet-template.html">
-                        <img src="img/projet-illustration-portrait.png" alt="illustrator design portrait afro pop">
-                        <div class="project-description">
-                        <div class="project-name">
-                          <h5 class="name">Nom du projet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                          <small>Site Web</small>
-                          <ion-icon name="tv-outline"></ion-icon>
-                        </div>
-                    </div>
-                      </a>
-                    </figure>
-                    <!-- /Portfolio Item 1 -->
-
-                    <!-- Portfolio Item 2 -->
-                    <figure class="portfolio-item" data-tags='["all", "video"]'>
-                      <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                        <img src="img/Project-2.png" alt="">
-                        <div class="project-description">
-                            <div class="project-name">
-                          <h5 class="name">Nom du Pojet</h5>
-                        </div>
-                        <div class="project-menu-block">
-                          <small>Illustration</small>
-                          <ion-icon name="videocam-outline"></ion-icon>                        
-                        </div>
-                    </div>
-                      </a>
-                    </figure>
-                    <!-- /Portfolio Item 2 -->
-
-                    <!-- Portfolio Item 3 -->
-                    <figure class="portfolio-item" data-tags='["all","design"]'>
-                      <a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                        <img src="img/Project-3.png" alt="">
-                        <div class="project-description">
-                            <div class="project-name">
-                          <h5 class="name">Nom du projet</h5>
-                        </div>
-                        <div class="project-menu-block">
-                          <small>App</small>
-                          <ion-icon name="images-outline"></ion-icon>                        
-                        </div>
-                    </div>
-                      </a>
-                    </figure>
-                    <!-- /Portfolio Item 3 -->
-
-                    <!-- Portfolio Item 4 -->
-                    <figure class="portfolio-item" data-tags='["all", "web"]'>
-                      <a href="portfolio-2.html">
-                        <img src="img/Project-4.png" alt="">
-                        <div class="project-description">
-                            <div class="project-name">
-                          <h5 class="name">Nom du Projet</h5>
-                        </div>
-                        <div class="project-menu-block">
-                          <small>App</small>
-                          <ion-icon name="tv-outline"></ion-icon>
-                        </div>
-                    </div>
-                      </a>
-                    </figure>
-                    <!-- /Portfolio Item 4 -->
-                     <!-- Portfolio Item 5 -->
-                    <figure class="portfolio-item" data-tags='["all", "web"]'>
-                        <a  href="portfolio-2.html">
-                          <img src="img/Project-4.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du Projet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>App</small>
-                            <ion-icon name="tv-outline"></ion-icon>
-                          </div>
-                      </div>
-                        </a>
-                      </figure>
-                   
-                    
-                    <!-- /Portfolio Item 5 -->
-
-                    <!-- Portfolio Item 6 -->
-                    <figure class="portfolio-item" data-tags='["all", "video"]'>
-                        <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                          <img src="img/Project-2.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du Pojet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>Illustration</small>
-                            <ion-icon name="videocam-outline"></ion-icon>                        
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                    
-                    <!-- /Portfolio Item 6 -->
-
-                    <!-- Portfolio Item 7 -->
-                    <figure class="portfolio-item" data-tags='["all", "design"]'>
-                        <a href="portfolio-1.html">
-                          <img src="img/Project-1.png" alt="">
-                          <div class="project-description">
-                          <div class="project-name">
-                            <h5 class="name">Nom du projet</h5>
-                            </div>
-                            <div class="project-menu-block">
-                            <small>Site Web</small>
-                            <ion-icon name="tv-outline"></ion-icon>
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                    
-                    <!-- /Portfolio Item 7 -->
-
-                    <!-- Portfolio Item 8 -->
+              <small>Illustration</small>
               
-                    <figure class="portfolio-item" data-tags='["all","web"]'>
-                        <a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                          <img src="img/Project-3.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du projet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>App</small>
-                            <ion-icon name="images-outline"></ion-icon>                        
-                          </div>
-                      </div>
-                        </a>
-                      </figure>
-                            
-                    <!-- /Portfolio Item 8 -->
-                    <!-- Portfolio Item 9 -->
-                    <figure class="portfolio-item" data-tags='["all", "app"]'>
-                        <a href="portfolio-1.html">
-                          <img src="img/Project-1.png" alt="">
-                          <div class="project-description">
-                          <div class="project-name">
-                            <h5 class="name">Nom du projet</h5>
-                            </div>
-                            <div class="project-menu-block">
-                            <small>Site Web</small>
-                            <ion-icon name="tv-outline"></ion-icon>
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                    
-                    <!-- /Portfolio Item 9 -->
-
-                    <!-- Portfolio Item 10 -->
-                    <figure class="portfolio-item" data-tags='["all", "app"]'>
-                        <a href="portfolio-2.html">
-                          <img src="img/Project-4.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du Projet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>App</small>
-                            <ion-icon name="tv-outline"></ion-icon>
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                  
-                    <!-- /Portfolio Item 10 -->
-
-                    <!-- Portfolio Item 11 -->
-                    <figure class="portfolio-item" data-tags='["all", "video"]'>
-                        <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
-                          <img src="img/Project-2.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du Pojet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>Illustration</small>
-                            <ion-icon name="videocam-outline"></ion-icon>                        
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                   
-                    <!-- /Portfolio Item 11 -->
-
-                    <!-- Portfolio Item 12 -->
-                    <figure class="portfolio-item" data-tags='["all","design"]'>
-                        <a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                          <img src="img/Project-3.png" alt="">
-                          <div class="project-description">
-                              <div class="project-name">
-                            <h5 class="name">Nom du projet</h5>
-                          </div>
-                          <div class="project-menu-block">
-                            <small>App</small>
-                            <ion-icon name="images-outline"></ion-icon>                        
-                          </div>
-                      </div>
-                        </a>
-                      </figure>                 
-                    <!-- /Portfolio Item 12 -->
-                  </div>
-                   
-                </div>
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
             </div> 
-            </div>
-        </section>
+          </div>
+        </div>
 
-    </main>
-    <footer id="footer">
-      <div class="social-footer" id="social-footer">
-        <ul class="social-links-footer">
-            <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-            <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        </ul>
+        <div class="img-wrapper portfolio-item" data-tags='["all", "app"]'>
+          <img class="zoom" src="assets/img/memory.png" alt="memory card game">
+          <div class="content fade">
+            <h5 class="name">Memory Card Game</h5>
+
+              <small>web app</small>
+              
+              <div class="project-desc">
+                <a href="./memory-game.html"> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "design"]'>
+          <img class="zoom" src="assets/img/projet3.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "app"]'>
+          <img class="zoom" src="assets/img/projet4.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "video"]'>
+          <img class="zoom" src="assets/img/projet5.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "web"]'>
+          <img class="zoom" src="assets/img/projet6.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "app"]'>
+          <img class="zoom" src="assets/img/projet3.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+             <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+             <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "web"]'>
+          <img class="zoom" src="assets/img/projet2.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="img-wrapper portfolio-item" data-tags='["all", "video"]'>
+          <img class="zoom" src="assets/img/projet2.jpg" alt="">
+          <div class="content fade">
+            <h5 class="name">Nom du Pojet</h5>
+
+              <small>Illustration</small>
+              
+              <div class="project-desc">
+                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
+                <a href=""> <ion-icon name="tv-outline"></ion-icon> </a>
+            </div> 
+          </div>
+        </div>
       </div>
-      <small>&#169; Made by Magda-Dev</small>
+    </section>
+
+
+    <section class="follow-section">
+      <p class="title">Gardons le contact</p>
+      <p >Pour toute demande de collaboration.</p>
+
+      <div class="follow-container">
+
+        <div class="follow-description">
+<p> Contactez moi par mail ou via les réseaux sociaux</p>
+<span class="cta">Contact <a href="./contact.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>
+        </div>
+        <div class="follow-grid">
+          <img class="grid-item-h" src="assets/img/projet1.jpg" alt="">
+          <img class="grid-item-h" src="assets/img/projet2.jpg" alt="">
+          <img class="grid-item-h" src="assets/img/projet3.jpg" alt="">
+          <img class="grid-item-h" src="assets/img/projet4.jpg" alt="">
+          <img class="grid-item-h" src="assets/img/projet5.jpg" alt="">
+          <img class="grid-item-h" src="assets/img/projet6.jpg" alt="">
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+<p>2022 By Magdalena Designs. </p>
     </footer>
 
 
-    <script src="js/burger.js"></script>
-     <script src="js/main-nav.js"></script> 
     <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/filters-portfolio.js"></script>
-    <!-- <script src="js/done.js"></script> -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/filters-portfolio.js"></script>
+   
 </body>
 </html>

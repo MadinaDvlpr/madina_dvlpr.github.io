@@ -4,70 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
-
-    <title>CONTACT | MADINA DEV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/new.css">
+    <title>HOME | MADINA DEV</title>
 </head>
-
 <body>
-  <header class="sidebar" id="sidebar">
-    <!-- Mobile Header -->
-    <nav class="navbar" id="navbar">
-        <div id="icon-burger">
-        <div class="hamburger burger"></div>
-        </div>
-    <div class="header-branding">
-    <img class="header-picture" src="img/ML-Logo-White.png" alt="profile picture">
-               <!-- <p class="sidebar-title">Magdalena Larmet</p> -->
-    <div class="brand-title">Magdalena Larmet</div>
-         <h1>UI Designer</h1>
-    </div>
-    <nav id="navigation" class="navigation">
-    <div class="nav-list" id="nav-list">
-    <ul>
-        <li class="active"><a href="./index.html" class="nav-links"><i class="fas fa-home" aria-hidden="true"></i>ACCUEIL</a></li>
-        <li><a href="./about.html" class="nav-links"><i class="fas fa-address-card" aria-hidden="true"></i> à PROPOS</a></li>
-        <li><a href="./resume.html" class="nav-links"><i class="fas fa-map-signs" aria-hidden="true"></i>PARCOURS</a></li><li><a href="./portfolio.html" class="nav-links"><i class="fas fa-images" aria-hidden="true"></i>PORTFOLIO</a></li>
-        <li><a href="./contact.html" class="nav-links"><i class="fas fa-phone-alt" aria-hidden="true"></i>CONTACT</a></li>
-    </ul>
-    </div>
-    <div class="social-header" id="social-header">
-     <ul class="social-links">
-         <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-         <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-         <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-         <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-         </ul>
-     </div>
-     </nav>
-   </header>
-
-
-  
- <main>
- 
-  <section class="page-wrapper moveToTop">
+  <header>  
     
-    <div class="inner-page">
-      <div class="transition is-active" id="transition-1"></div>
-    <div class="page contact" id="contact">
-      
-    <div class="page-title about">
-     <h2>Contact</h2>
-     <h3 class="title-desc">Et si on collaborait ?</h3>
+    <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
+    <nav class="navbar">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <div class="page-content contact-page">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
+        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
+        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
+        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
+    </ul>
+  </nav>
+  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
+    </header>
+  
+  
+<!-- ------------ -->
+<!-- Social links -->
+<div class="social">
+  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
+  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<!-- ------------ -->
 
-    <div>
-        <div class="subpage-block">
-            <div class="block-title">
-              <h3>Contactez-moi</h3>
-            </div>
-            <p>Pour toute collaboration professionnelle, n'hésitez pas à m'envoyer un message. Je ne tarderais pas à vous répondre, promis !</p>
-            <div class="contact-info-block">
+
+    <section class="contact-section">
+
+      <h2>Mes coordonnées</h2>
+      <p class="title">Contactez-moi</p>
+<div class="contact-container">
+<div class="Contact-details">
+<p>Je suis disponible pour toute collaboration, n'hésitez pas à m'envoyer un message !</p>
+            <div class="contact-info">
               <div class="ci-icon">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
@@ -75,7 +58,7 @@
                 <h5>Compiègne, OISE</h5>
               </div>
             </div>
-            <div class="contact-info-block">
+            <div class="contact-info">
               <div class="ci-icon">
                 <ion-icon name="mail-outline"></ion-icon>
               </div>
@@ -84,7 +67,7 @@
               </div>
             </div>
              
-            <div class="contact-info-block">
+            <div class="contact-info">
               <div class="ci-icon">
                 <ion-icon name="calendar-number-outline"></ion-icon>
               </div>
@@ -92,90 +75,55 @@
                 <h5>Stage | Alternance  Disponible</h5>
               </div>
             </div>
-          </div>
-    </div>
-    <div>
-    <!-- <div class="block-title">
-     <h3>Formulaire</h3>
-    </div> -->
-      <!-- <form id="contact-form" method="post" action="contact_form/contact_form.php">
-        <div class="messages"></div>
-        <div class="controls">
-         <div class="form-group">
-        <input id="form_name" type="text" name="name" class="form-control"
-                                            placeholder="Full Name" required="required" data-error="Name is required.">
-        <div class="form-control-border"></div>
-        <i class="form-control-icon pe-7s-user"></i>
-        <div class="help-block with-errors"></div>
-        </div>
 
-        <div class="form-group">
-            <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="Email Address" required="required"
-                                            data-error="Valid email is required.">
-            <div class="form-control-border"></div>
-            <i class="form-control-icon pe-7s-mail"></i>
-            <div class="help-block with-errors"></div>
-        </div>
-        <div class="form-group">
-            <textarea id="form_message" name="message" class="form-control"
-                                            placeholder="Laissez votre message" rows="4" required="required"
-                                            data-error="Laissez moi un message."></textarea>
-            <div class="form-control-border"></div>
-                <i class="form-control-icon pe-7s-comment"></i>
-                <div class="help-block with-errors"></div>
-                </div>
 
-       <button class="button" ><input type="submit" value="" target="_blank">Envoyer</button>
-        </div>
-        </form> -->
 
-        <div class="picture-container">
-          <a href="#" class="photo">
-              <h1>Madina Dev</h1>
-                <img src="img/profile-picture.png" />
-              <div class="glow-wrap">
-                <i class="glow"></i>
+            <!-- Profiles réseaux sociaux -->
+            <p class="title contact">Trouvez moi sur les réseaux sociaux</p>
+
+
+            <div class="social-contact-container">
+
+              <div class="social-contact-icons">
+                <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><img src="assets/img/linkedin-icon.png" alt="icone linkedin"></a>
+                  <p>magdalarmet</p>
               </div>
-            </a>
-            
-            <div class="label-pic">
-              <a href="http://tiagoalexandrelopes.com/" target="_blank" id="author">UI DESIGNER</a>
-            </div> 
-          
+
+              <div class="social-contact-icons">
+                <a href="https://dribbble.com/me_madina" target="_blank"><img src="assets/img/dribble-icon.png" alt="icone dribbble"></a>
+                <p>madina_designs</p>
+              </div>
+              
+              <div class="social-contact-icons">
+                <a href="https://github.com/Magda-dev" target="_blank"><img src="assets/img/github-icon.png" alt="icone github"></a>
+                <p>Magda-dev</p>
+              </div>
+
+              <div class="social-contact-icons">
+                <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><img src="assets/img/instagram-icon.png" alt="icone instagram"></a>
+                <p>madina_afrolicious</p>
+              </div>
+
+            </div>
+
           </div>
 
+          <div class="contact-photo">
+            <img src="assets/img/hero-img.png" alt="">
+        </div>
 
-    </div>      
+    </div>   
+    </section>
+
+<footer>
+    <p>2022 By Magdalena Designs. </p>
+        </footer>
     
-    </div>
-        </div>
-        </div>
-    </div>
-
-        </section>
-
-    </main>
-    <footer id="footer">
-      <div class="social-footer" id="social-footer">
-        <ul class="social-links-footer">
-            <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
-            <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        </ul>
-      </div>
-      <small>&#169; Made by Magda-Dev</small>
-    </footer>
-
-
-    <script src="js/burger.js"></script>
-     <script src="js/main-nav.js"></script> 
-     <!-- <script src="js/navigation.js"></script>  -->
-    <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    
+        <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/app.js"></script>
+       
+    </body>
+    </html>   
