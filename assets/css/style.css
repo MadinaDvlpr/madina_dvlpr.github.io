@@ -1283,7 +1283,7 @@ align-items:center;
 #main-hero{
 
   animation: slideLeft 1s ease-in;
-  animation-delay: 200ms;
+  animation-delay: 360ms;
 } 
 
 #hero-graphic-1, 
@@ -1304,16 +1304,16 @@ align-items:center;
 
 .hero-description h2{
   animation: slideRight 1s ease;
-  animation-delay: 150ms;
+  animation-delay: 360ms;
 }
 
 .hero-description p{
   animation: slideRight 1s ease;
-  animation-delay: 200ms;
+  animation-delay: 380ms;
 }
 .hero-description .cta{
   animation: slideRight 1s ease;
-  animation-delay: 250ms;
+  animation-delay: 400ms;
 }
 
 #main-skill,
