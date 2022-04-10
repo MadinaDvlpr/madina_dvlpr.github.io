@@ -195,6 +195,7 @@ margin: 0 1rem;
     background: var(--Black);
     color: var(--White);
     width: 100vw;
+    
    }
 
     .hero-container{
@@ -1278,10 +1279,48 @@ align-items:center;
   margin-bottom: 3rem;
 }
 
+/* ======================ANIMATIONS DE PAGE======================= */
+#main-hero{
 
+  animation: slideLeft 1s ease-in;
+  animation-delay: 200ms;
+} 
 
+#hero-graphic-1, 
+#hero-graphic-2{
+  animation: slideRight 1s ease;
+  animation-delay: 250ms;
+}
 
+#hero-graphic-3{
+  animation: slideLeft 1s ease;
+  animation-delay: 300ms;
+}
 
+.hero-description h1{
+  animation: slideRight 1s ease;
+  animation-delay: 100ms;
+}
+
+.hero-description h2{
+  animation: slideRight 1s ease;
+  animation-delay: 150ms;
+}
+
+.hero-description p{
+  animation: slideRight 1s ease;
+  animation-delay: 200ms;
+}
+.hero-description .cta{
+  animation: slideRight 1s ease;
+  animation-delay: 250ms;
+}
+
+#main-skill,
+#skill-graphic{
+animation: slideExpandUp 1s ease;
+}
+/* =====================MEDIA QUERIES====================== */
 
 @media screen and (max-width:640px) {
   h1{
