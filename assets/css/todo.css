@@ -1,0 +1,308 @@
+/* =============RESET=========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+
+/* =============VARIABLES=========== */
+:root {
+  --clr-primary: #9ED5E9;
+  --clr-light: #f4f4f4;
+  --clr-dark: #333;
+  --clr-warning: rgb(123, 6, 6);
+  --spacer:2rem;
+  --size:.75em;
+}
+
+
+
+
+/* =============GENERAL STYLING=========== */
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--clr-light);
+  background-color: #202020 ;
+  
+
+
+  display: grid;
+  grid-template-areas: "header header header header"
+                        ". lists  active-box .";
+  grid-template-columns:    1fr minmax(6.25rem, 18.75rem) minmax(15.625rem, 31.25rem) 1fr; /*set up des 4 colonnes*/
+gap: 1.5rem;
+}
+/* =============STYLES=========== */
+.title{
+  grid-area: header;
+  text-align: center;
+  font-size: calc(7vw + 2rem); /*taille max et taille minimum que peut prendre le titre permet d'avaoir une taille responsive*/
+  font-weight: 700;
+  color: #9ed5e938;
+}
+
+.all-tasks{
+  grid-area: lists;
+  background: transparent;
+  border-radius: 8px;
+  height: 100%;
+  padding: 1.5rem;
+  color: var(--clr-light);
+}
+
+.task-list{
+  font-size: 1.2rem;
+  line-height: 1.7;
+  list-style: circle;
+  padding-left: 1.1em;
+}
+
+.list-name{
+  cursor: pointer;
+}
+.list-name:hover{
+opacity:.7;
+}
+form{
+  display: flex;
+}
+
+.btn{
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.btn.create{
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.25em;
+  transition: opacity 200ms ease-in;
+}
+
+.btn.create:hover{
+  opacity:.7
+}
+.new{
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor; /* currentcolor equivaut à la couleur set up pour le text*/
+  outline: none;
+  order: 2; /*place le bouton avant le champ*/
+  transition: border-bottom 200ms ease-in;
+  padding: .25em;
+
+}
+.new::placeholder{
+  opacity: .4;
+}
+.new:focus{
+  border-bottom-width: 3px;
+}
+.new:focus::placeholder{
+  opacity: 0.2;
+}
+
+.new.list{
+  font-size: 1.2rem;
+}
+
+.new.task{
+margin-bottom: 0;
+}
+
+ 
+.active-list{
+  font-weight: 700;
+}
+.todo-list{
+  
+  grid-area: active-box;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  border-radius: 8px;
+}
+
+.todo-header{
+  background: var(--clr-primary);
+  padding: var(--spacer);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--clr-light);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.list-title{
+  margin: 0;
+  margin: 0 1em 0 0;
+}
+
+.task-count{
+margin: 0;
+font-size: 1rem;
+}
+
+.todo-body{
+  padding: var(--spacer);
+  position: relative;
+}
+
+.new-task-creator .create{
+  color: var(--clr-primary);
+}
+
+[type="checkbox"]{
+  opacity: 0; /* je cache toutes les checkbox via l'opacité*/
+  position: absolute; /* position absolute jette les checkbox hors du cadre de la page web cette technique permet de pouvoir toujours interagir a=sur les checkbox contrairement à un display none*/
+}
+.task label{
+display: flex-inline;
+align-items: center;
+margin-right: var(--size);
+position: relative;
+}
+.task{
+  position: relative;
+  margin-bottom: 1.5em;
+
+}
+.task::after{
+content: "";
+position: absolute;
+right: 0;
+left: 0;
+bottom: -.5em;
+height: 1px;
+background: var(--clr-dark);
+opacity: .1;
+}
+
+.custom-checkbox{
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  border: 2px solid var(--clr-dark);
+  border-radius: 50%;
+  margin-right: var(--size);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: transform 200ms ease-in;
+}
+
+.task:hover .custom-checkbox,
+[type="checkbox"]:focus + label .custom-checkbox{ /*permet de permettre le controle via la tabulation*/
+  transform: scale(1.2);  /* dès que je vais faire un hover sur le texte ou la chackbox alors la checkbox sera zoomée*/
+  -webkit-transform: scale(1.2);
+  color: var(--clr-primary);
+}
+
+[type="checkbox"]:checked + label .custom-checkbox{
+  background: var(--clr-primary);
+  border-color: var(--clr-primary);
+  box-shadow: inset 0 0 0px 3px white;
+}
+
+[type="checkbox"]:checked + label{
+opacity: 0.5;
+}
+
+
+/*rayer lers taches accomplies*/
+.task label::after{
+  content: "";
+  position: absolute;
+  left: 1.5em;
+  right: 0;
+  top: calc(50% - 1.5px);
+  height: 3px;
+  background: var(--clr-dark);
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease-in-out;
+}
+
+[type="checkbox"]:checked + label::after{
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform-origin: left;
+
+  }
+  
+
+.delete-controls{
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -130px;
+  color: var(--clr-light);
+  font-weight: 700;
+  /* padding-top: 30rem;
+  height: 8rem; */
+}
+
+
+.btn.delete{
+  opacity: .7;
+  font-size: 1rem;
+  transition: color 200ms;
+}
+
+.btn.delete:hover{
+  color: var(--clr-warning);
+}
+
+/* =============MEDIA QUERIES=========== */
+
+
+@media screen and (max-width:768px){
+
+body{
+  grid-template-areas: "header header header"
+                        ". lists ."
+                        ". active-box .";
+  grid-template-columns:    1fr minmax(15.625rem, 31.25rem) 1fr; /*set up des 4 colonnes*/
+gap: 1.5rem;
+}
+
+
+.delete-controls{
+  bottom: -50px;
+}
+ }
+
+    
+
+
+
+
+
