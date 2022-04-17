@@ -1,8 +1,8 @@
 /* =============RESET=========== */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -11,25 +11,27 @@ h2,
 h3,
 h4,
 p {
-  margin: 0;
+margin: 0;
 }
 
 *,
 *::before,
 *::after {
-  font-family: inherit;
-  box-sizing: border-box;
+font-family: inherit;
+box-sizing: border-box;
 }
 
 
 /* =============VARIABLES=========== */
 :root {
-  --clr-primary: #9ED5E9;
-  --clr-light: #f4f4f4;
-  --clr-dark: #333;
-  --clr-warning: rgb(123, 6, 6);
-  --spacer:2rem;
-  --size:.75em;
+--clr-primary: #1A77B5;
+--clr-contrast: #240538;
+--clr-light: #f4f4f4;
+--clr-dark: #3F3849;
+--clr-warning: rgb(63, 2, 2);
+--clr-ok:rgb(10, 72, 12);
+--spacer:2rem;
+--size:.75em;
 }
 
 
@@ -37,130 +39,256 @@ p {
 
 /* =============GENERAL STYLING=========== */
 body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: var(--clr-light);
-  background-color: #202020 ;
-  
-
-
-  display: grid;
-  grid-template-areas: "header header header header"
-                        ". lists  active-box .";
-  grid-template-columns:    1fr minmax(6.25rem, 18.75rem) minmax(15.625rem, 31.25rem) 1fr; /*set up des 4 colonnes*/
+margin: 0;
+font-family: "Work Sans", sans-serif;
+font-weight: 300;
+font-size: 1.5rem;
+color: var(--clr-primary);
+background: url('../img/background.png');
+background-repeat:  no-repeat ;
+background-size: cover;
+display: grid;
+grid-template-areas: "header header header header"
+                      ". lists  active-box .";
+grid-template-columns:    5vw minmax(15vw, 30vw) minmax(30vw, 50vw) 5vw; /*set up des 4 colonnes*/
 gap: 1.5rem;
+margin-bottom: 5rem;
 }
 /* =============STYLES=========== */
 .title{
-  grid-area: header;
-  text-align: center;
-  font-size: calc(7vw + 2rem); /*taille max et taille minimum que peut prendre le titre permet d'avaoir une taille responsive*/
-  font-weight: 700;
-  color: #9ed5e938;
+grid-area: header;
+text-align: center;
+font-size: calc(7vw + 2rem); /*taille max et taille minimum que peut prendre le titre permet d'avaoir une taille responsive*/
+font-weight: 700;
+color: #9ed5e938;
 }
 
 .all-tasks{
-  grid-area: lists;
-  background: transparent;
-  border-radius: 8px;
-  height: 100%;
-  padding: 1.5rem;
-  color: var(--clr-light);
+grid-area: lists;
+background: transparent;
+border-radius: 8px;
+height: 100%;
+color: var(--clr-dark);
+min-width: 30vw;
+min-height: 50vh;
+background: rgba( 244, 244, 244, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: flex-start;
 }
 
 .task-list{
-  font-size: 1.2rem;
-  line-height: 1.7;
-  list-style: circle;
-  padding-left: 1.1em;
+font-size: 1.2rem;
+line-height: 1.7;
+list-style: circle;
+padding-left: 1.1em;
 }
-
+.list-header{
+background: rgba( 36, 5, 56, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: var(--clr-light);
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+min-height: 5rem;
+}
+.list-body{
+padding: 1rem;
+}
 .list-name{
-  cursor: pointer;
+cursor: pointer;
 }
 .list-name:hover{
 opacity:.7;
 }
-form{
-  display: flex;
+#list-form{
+display: flex;
+align-items: center;
+/* flex-direction: column; */
+}
+#task-form{
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3vh;
+  margin-bottom: 2rem;
+  /* gap: 0.5rem; */
+  flex-wrap: nowrap;
+  width: 70%;
 }
 
+#task-form :nth-child(1){
+max-width: 100%;
+}
 .btn{
-  cursor: pointer;
-  background: 0;
-  border: 0;
-  padding: 0;
-  color: inherit;
-  font-size: 1rem;
+cursor: pointer;
+background: transparent;
+border: 0;
+padding: .7rem;
+color: var(--clr-primary);
+font-size: 1rem;
+border-radius: 8px;
+
+}
+
+.btn:focus{
+transform: scale(1.2);
+}
+.task .content .text:not(:read-only) {
+color: var(--clr-dark);
 }
 
 .btn.create{
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-right: 0.25em;
-  transition: opacity 200ms ease-in;
+font-weight: 900;
+transition: opacity 200ms ease-in;
+background: transparent;  
+color: var(--clr-primary)!important;
 }
 
+.btn.delete:hover,
 .btn.create:hover{
-  opacity:.7
+opacity:.7;
 }
-.new{
-  background: transparent;
-  border: 0;
-  color: inherit;
-  font-size: inherit;
-  border-bottom: 1px solid currentColor; /* currentcolor equivaut à la couleur set up pour le text*/
-  outline: none;
-  order: 2; /*place le bouton avant le champ*/
-  transition: border-bottom 200ms ease-in;
-  padding: .25em;
 
+
+
+.btn.delete {
+font-weight: 900;
+transition: opacity 200ms ease-in;
+background: transparent;  
+color: var(--clr-warning)!important;
+
+}
+
+
+
+.task .actions {
+display: flex;
+margin: 0 -0.5rem;
+}
+
+.task .actions button {
+cursor: pointer;
+margin: 0 0.5rem;
+font-size: 1.125rem;
+font-weight: 700;
+text-transform: uppercase;
+transition: 0.4s;
+border: none;
+background: transparent;
+}
+
+.task .actions button:hover {
+opacity: 0.8;
+}
+
+.task .actions button:active {
+opacity: 0.6;
+}
+
+.task .actions .edit {
+background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,17,1) 61%, rgb(3, 97, 116) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+background-image: linear-gradient(90deg, rgba(62,2,10,1) 0%, rgba(121,9,24,1) 61%, rgba(255,0,0,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* .create-task,
+.create-list{
+margin-top: 2rem;
+} */
+/* .create-task{
+margin-left: 1.5rem ;
+} */
+.new{
+background: transparent;
+color: var(--clr-dark);
+font-size: inherit;
+border: 1px solid var(--clr-primary); 
+outline: none;
+transition: border 200ms ease-in;
+padding: .25em;
+width: 100%;
 }
 .new::placeholder{
-  opacity: .4;
+opacity: .4;
 }
 .new:focus{
-  border-bottom-width: 3px;
+border-width: 2px;
 }
 .new:focus::placeholder{
-  opacity: 0.2;
+opacity: 0.2;
 }
 
-.new.list{
-  font-size: 1.2rem;
-}
-
+.new.list,
 .new.task{
+font-size: 1.2rem;
 margin-bottom: 0;
 }
 
- 
+
 .active-list{
-  font-weight: 700;
+font-weight: 700;
 }
 .todo-list{
-  
-  grid-area: active-box;
-  background: var(--clr-light);
-  color: var(--clr-dark);
-  border-radius: 8px;
+
+grid-area: active-box;
+
+color: var(--clr-dark);
+border-radius: 8px;
+min-width: 50vw;
+background: rgba( 244, 244, 244, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.list-controls{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.list-controls > *{
+flex: 0 0 30%;
+}
+ion-icon {
+font-size: 1.5rem;
+}
 .todo-header{
-  background: var(--clr-primary);
-  padding: var(--spacer);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--clr-light);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+background: rgba( 26, 119, 181, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: var(--clr-light);
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+min-height: 5rem;
 }
 .list-title{
-  margin: 0;
-  margin: 0 1em 0 0;
+margin: 0;
+margin: 0 1em 0 0;
 }
 
 .task-count{
@@ -169,117 +297,110 @@ font-size: 1rem;
 }
 
 .todo-body{
-  padding: var(--spacer);
-  position: relative;
+padding: 2rem 1rem;
+height: auto;
 }
 
 .new-task-creator .create{
-  color: var(--clr-primary);
+color: var(--clr-primary);
 }
-
+.new-task-creator{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 [type="checkbox"]{
-  opacity: 0; /* je cache toutes les checkbox via l'opacité*/
-  position: absolute; /* position absolute jette les checkbox hors du cadre de la page web cette technique permet de pouvoir toujours interagir a=sur les checkbox contrairement à un display none*/
+opacity: 0; /* je cache toutes les checkbox via l'opacité*/
+position: absolute; /* position absolute jette les checkbox hors du cadre de la page web cette technique permet de pouvoir toujours interagir a=sur les checkbox contrairement à un display none*/
 }
-.task label{
+.task #label{
 display: flex-inline;
 align-items: center;
 margin-right: var(--size);
 position: relative;
+min-width: 70%;
 }
 .task{
-  position: relative;
-  margin-bottom: 1.5em;
+
+margin-bottom: 1.5em;
+display: flex;
+align-items: center;
 
 }
-.task::after{
-content: "";
-position: absolute;
-right: 0;
-left: 0;
-bottom: -.5em;
-height: 1px;
-background: var(--clr-dark);
-opacity: .1;
+.list{
+display: flex;
+align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  max-height: 2rem;
 }
 
 .custom-checkbox{
-  display: inline-block;
-  width: var(--size);
-  height: var(--size);
-  cursor: pointer;
-  border: 2px solid var(--clr-dark);
-  border-radius: 50%;
-  margin-right: var(--size);
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  transition: transform 200ms ease-in;
+display: inline-block;
+width: var(--size);
+height: var(--size);
+cursor: pointer;
+border: 2px solid var(--clr-dark);
+border-radius: 50%;
+margin-right: var(--size);
+transform: scale(1);
+-webkit-transform: scale(1);
+transition: transform 200ms ease-in;
 }
 
 .task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox{ /*permet de permettre le controle via la tabulation*/
-  transform: scale(1.2);  /* dès que je vais faire un hover sur le texte ou la chackbox alors la checkbox sera zoomée*/
-  -webkit-transform: scale(1.2);
-  color: var(--clr-primary);
+transform: scale(1.2);  /* dès que je vais faire un hover sur le texte ou la chackbox alors la checkbox sera zoomée*/
+-webkit-transform: scale(1.2);
+color: var(--clr-primary);
 }
 
 [type="checkbox"]:checked + label .custom-checkbox{
-  background: var(--clr-primary);
-  border-color: var(--clr-primary);
-  box-shadow: inset 0 0 0px 3px white;
+background: var(--clr-primary);
+border-color: var(--clr-primary);
+box-shadow: inset 0 0 0px 3px var(--clr-light);
 }
 
 [type="checkbox"]:checked + label{
 opacity: 0.5;
+text-decoration: line-through;
 }
 
 
-/*rayer lers taches accomplies*/
-.task label::after{
-  content: "";
-  position: absolute;
-  left: 1.5em;
-  right: 0;
-  top: calc(50% - 1.5px);
-  height: 3px;
-  background: var(--clr-dark);
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 200ms ease-in-out;
-}
-
-[type="checkbox"]:checked + label::after{
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform-origin: left;
-
-  }
-  
 
 .delete-controls{
-  display: flex;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -130px;
-  color: var(--clr-light);
-  font-weight: 700;
-  /* padding-top: 30rem;
-  height: 8rem; */
+display: flex;
+ /*justify-content: space-evenly;
+position: fixed;
+width: 100%;
+left: 0;
+bottom: 1rem;
+margin-top: 2rem; */
+color: var(--clr-contrast);
+font-weight: 700;
+/* padding-top: 30rem;
+height: 8rem; */
+width: 30%;
 }
 
+.btn.edit{
+opacity: .7;
+font-size: 1rem;
+transition: color 200ms;
+color: var(--clr-primary);
 
-.btn.delete{
-  opacity: .7;
-  font-size: 1rem;
-  transition: color 200ms;
+background: none;
 }
 
 .btn.delete:hover{
-  color: var(--clr-warning);
+color: var(--clr-warning);
 }
+
+.btn.edit:hover{
+color: var(--clr-ok);
+
+}
+
 
 /* =============MEDIA QUERIES=========== */
 
@@ -287,20 +408,20 @@ opacity: 0.5;
 @media screen and (max-width:768px){
 
 body{
-  grid-template-areas: "header header header"
-                        ". lists ."
-                        ". active-box .";
-  grid-template-columns:    1fr minmax(15.625rem, 31.25rem) 1fr; /*set up des 4 colonnes*/
+grid-template-areas: "header header header"
+                      ". lists ."
+                      ". active-box .";
+grid-template-columns:    1fr minmax(15.625rem, 31.25rem) 1fr; /*set up des 4 colonnes*/
 gap: 1.5rem;
 }
 
 
 .delete-controls{
-  bottom: -50px;
+bottom: -50px;
 }
- }
+}
 
-    
+  
 
 
 
