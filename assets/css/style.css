@@ -330,6 +330,7 @@ align-items: center;
  #main-skill{
    position: absolute;
    left: 15rem;
+   max-width: 32rem;
  }
 #skill-graphic{
   position: relative;
