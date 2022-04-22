@@ -1323,7 +1323,7 @@ align-items:center;
 
 #main-skill,
 #skill-graphic{
-animation: slideExpandUp 1s ease;
+animation: slideRight 1s ease;
 }
 /* =====================MEDIA QUERIES====================== */
 
