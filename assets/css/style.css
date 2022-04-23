@@ -1325,6 +1325,7 @@ align-items:center;
 #skill-graphic{
 animation: slideRight 1s ease;
 }
+
 /* =====================MEDIA QUERIES====================== */
 
 @media screen and (max-width:640px) {
