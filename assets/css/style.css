@@ -1176,7 +1176,6 @@ display: none;
 
 
 .contact-container :nth-child(1){
-  padding: 0 2rem;
   font-size: 1.2rem;
   font-family: 'Source Sans Pro','Poppins';
 
@@ -1206,10 +1205,15 @@ align-items:center;
 .contact-photo img{
   width: 30rem;
   border-radius: 8px;
+  /* top: 2rem; */
+  margin: 1rem;
+  position: relative;
+    top: 0;
+    right: -12rem;
 }
 
 .social-contact-container img{
-  width: 9rem;
+  width: 6rem;
   cursor: pointer;
 }
 /* =====================PAGE RESUME=================== */
@@ -1325,6 +1329,22 @@ align-items:center;
 #skill-graphic{
 animation: slideRight 1s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =====================MEDIA QUERIES====================== */
 
