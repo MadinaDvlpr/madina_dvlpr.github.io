@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <title>NOM DU PROJET | MADINA DEV</title>
+</head>
+<body>
+     
+    
+    <header class="sidebar" id="sidebar">
+        <!-- Mobile Header -->
+        <nav class="navbar" id="navbar">
+            <div id="icon-burger">
+            <div class="hamburger burger"></div>
+            </div>
+        <div class="header-branding">
+            <img class="header-picture" src="img/Logo-White.png" alt="profile picture">
+            <!-- <p class="sidebar-title">Magdalena Larmet</p> -->
+        <div class="brand-title">Magdalena Larmet</div>
+             <h1>UI Designer</h1>
+        </div>
+        <nav id="navigation" class="navigation">
+        <div class="nav-list" id="nav-list">
+        <ul>
+            <li class="active"><a href="./index.html" class="nav-links"><i class="fas fa-home" aria-hidden="true"></i>ACCUEIL</a></li>
+            <li><a href="./about.html" class="nav-links"><i class="fas fa-address-card" aria-hidden="true"></i> à PROPOS</a></li>
+            <li><a href="./resume.html" class="nav-links"><i class="fas fa-map-signs" aria-hidden="true"></i>PARCOURS</a></li><li><a href="./portfolio.html" class="nav-links"><i class="fas fa-images" aria-hidden="true"></i>PORTFOLIO</a></li>
+            <li><a href="./contact.html" class="nav-links"><i class="fas fa-phone-alt" aria-hidden="true"></i>CONTACT</a></li>
+        </ul>
+        </div>
+        <div class="social-header" id="social-header">
+         <ul class="social-links">
+             <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+             <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
+             <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
+             <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+             </ul>
+         </div>
+         </nav>
+       </header>
+
+
+
+    <main>
+      <section class="page-wrapper drop projet-page">
+            <div class="inner-page project">  
+            <div class="page"  id="project1">
+                          
+                <div class="project-title">
+                    <h2>PORTRAIT ILLUSTRATION SOUS ILUSTRATOR</h2>
+                </div>
+                <div class="page-content third-grid-layout">
+                  <div class="thrid-col">
+               
+                    <div class="carousel-wrapper">
+                        <div class="carousel-container">
+                          <input class="carousel__input" type="radio" id="carousel__slide--1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                          
+            <div class="carousel__slide">
+                <img src="img/projet-illustration-portrait.png">
+                <div class="carousel__caption">
+                    <p>inspiré par un tutoriel sur le site Adobe<br/>Image: <a target="_blank" href="">Illustrator</a></p>
+
+                </div>
+            </div>
+        
+            <input class="carousel__input" type="radio" id="carousel__slide--2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel__slide">
+                <img src="img/diapo2.png">
+                <div class="carousel__caption">
+                    <p>url du site ou de la demo<br/>Image: <a target="_blank" href="">ESA/Tim Peake</a></p>
+
+                </div>
+            </div>
+        
+            <input class="carousel__input" type="radio" id="carousel__slide--3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel__slide">
+                <img src="img/diapo3.png">
+                <div class="carousel__caption">
+                    <p>url du site ou de la demo<br/>Image: <a target="_blank" href="">ESA/Tim Peake</a></p>
+
+                </div>
+            </div>
+        
+            <input class="carousel__input" type="radio" id="carousel__slide--4" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel__slide">
+                <img src="img/diapo1.png">
+                <div class="carousel__caption">
+                    <p>url du site ou de la demo<br/>Image: <a target="_blank" href="">ESA/Tim Peake</a></p>
+                </div>
+            </div>
+            </div>
+            
+            <!-- ARROWS -->
+            <label for="carousel__slide--5" class="carousel__arrow carousel__arrow--prev carousel__arrow--1"></label>
+            <label for="carousel__slide--5" class="carousel__arrow carousel__arrow--next carousel__arrow--4"></label>
+            <label for="carousel__slide--4" class="carousel__arrow carousel__arrow--prev carousel__arrow--5"></label>
+            <label for="carousel__slide--4" class="carousel__arrow carousel__arrow--next carousel__arrow--3"></label>
+            <label for="carousel__slide--3" class="carousel__arrow carousel__arrow--prev carousel__arrow--4"></label>
+            <label for="carousel__slide--3" class="carousel__arrow carousel__arrow--next carousel__arrow--2"></label>
+            <label for="carousel__slide--2" class="carousel__arrow carousel__arrow--prev carousel__arrow--3"></label>
+            <label for="carousel__slide--2" class="carousel__arrow carousel__arrow--next carousel__arrow--1"></label>
+            <label for="carousel__slide--1" class="carousel__arrow carousel__arrow--prev carousel__arrow--2"></label>
+            <label for="carousel__slide--1" class="carousel__arrow carousel__arrow--next carousel__arrow--5"></label> 
+        
+            <!-- BULLETS -->
+            <ol class="carousel__bullets">
+                <li>
+                    <label for="carousel__slide--1" class="carousel__bullets--bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel__slide--2" class="carousel__bullets--bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel__slide--3" class="carousel__bullets--bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel__slide--4" class="carousel__bullets--bullet"></label>
+                </li>
+                <li>
+                    <label for="carousel__slide--5" class="carousel__bullets--bullet"></label>
+                </li>
+            </ol>
+
+
+                        </div>
+                        <!-- <iframe width="630" height="315" src="https://www.youtube.com/embed/apVpWa15SeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                      </div>
+                     
+                 
+                            <div class="third-col-right project-overview">
+                                <div class="block-title project">
+                                    <h3>Description</h3>
+                                   </div>
+                                   <div class="project-page-description">
+                                      <span><ion-icon name="person-outline"></ion-icon> Magdalena Larmet</span>
+                                      <span><ion-icon name="earth-outline"></ion-icon> www.magdalarmet.com</span>
+                                       <span><ion-icon name="calendar-number-outline"></ion-icon> 31 Janvier, 2022</span>
+                                   </div>
+                                   <div class="block-title project">
+                                    <h3>Technologies</h3>
+                                   </div>
+                                   <div class="tech-block">
+                                       <div class="label">HTML5</div>
+                                       <div class="label">CSS3</div>
+                                       <div class="label">JS</div>
+                                       <div class="label">PHP</div>
+                                       <div class="label">AJAX</div>
+                                       <div class="label">JS</div>
+                                       <div class="label">PHP</div>
+                                       <div class="label">AJAX</div>
+                                   </div>
+                                   <div class="block-title project">
+                                    <h3>Partager</h3>
+                                   </div>
+                                   <div class="share-section">
+                               
+                                  <ul class="info-list share-icon">
+                                    <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
+                                <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            </div>
+            </div> 
+            </div>
+
+            
+        </section>  
+
+    </main>
+
+    <footer id="footer">
+        <div class="social-footer" id="social-footer">
+          <ul class="social-links-footer">
+              <li><a href="https://www.linkedin.com/in/magdalarmet/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/Magda-dev" title="Github"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://codepen.io/madina-larmet" title="Codepen"><i class="fab fa-codepen"></i></a></li>
+              <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <small>&#169; Made by Magda-Dev</small>
+      </footer>
+
+
+    <script src="js/burger.js"></script>
+    <script src="js/main-nav.js"></script> 
+     <!-- <script src="js/navigation.js"></script>  -->
+     <!-- <script src="js/img-carousel.js"></script> -->
+    <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+</body>
+</html>
