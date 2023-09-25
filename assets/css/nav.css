@@ -16,15 +16,15 @@ margin: 0;
 
 /* =============VARIABLES=========== */
 :root{
---Dark-Grey: #131313;
---Light-Grey: #8B8B8C;
---Pink: #8F1863;
---Purple: #341435;
---Black: #0B0C0C;
---White: #F2F2F2; 
---Green: #7BC18C;
---Blue: #33B4A7;
-
+  --Green:#61DBD1;
+  --Dark-Grey: #262626;
+  --Blue:#00ADDC;
+  --Purple:#7F3F98;
+  --Grey:#E5E5E5;
+  --heading-font-family:'Saira',Helvetica;
+  --text-font-family:'Lato', sans-serif; 
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
 }
 
 

@@ -15,16 +15,15 @@ p {
 
 /* =============VARIABLES=========== */
 :root{
-  --Dark-Grey: #F2F2F2;
-  --Light-Grey: #BFBFBF;
-  --Pink: #8F1863;
-  --Purple: #7F3F98;
-  --Black: #0B0C0C;
-  --White: #F2F2F2; 
-  --Green: #61DBD1;
-  --Blue: #00ADDC;
-  --Light-Blue: #C5F3FF;
-
+  --Green:#61DBD1;
+  --Dark-Grey: #262626;
+  --Blue:#00ADDC;
+  --Purple:#7F3F98;
+  --Grey:#E5E5E5;
+  --heading-font-family:'Saira',Helvetica;
+  --text-font-family:'Lato', sans-serif; 
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
 }
 
 
