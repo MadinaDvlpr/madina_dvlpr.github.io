@@ -20,14 +20,14 @@
 --Bleu:	hsl(174, 57%, 45%);
 --Green:hsl(135, 36%, 62%);
 --Grey:	hsl(0, 0%, 15%);
---Dark-Grey:	hsl(0, 0%, 5%);
+--Black:	hsl(0, 0%, 5%);
 --Black:	hsl(0, 0%, 0%);
 --White:hsl(220, 23%, 97%);
 }
 
 body{
   height:100vh;
-  background-color: var(--Light-Grey);
+  /* background-color: var(--Black); */
 }
 
 h1, h2, h3 {

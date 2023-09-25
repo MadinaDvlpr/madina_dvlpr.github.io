@@ -22,7 +22,7 @@
     --Bleu:	hsl(174, 57%, 45%);
     --Green:hsl(135, 36%, 62%);
     --Grey:	hsl(0, 0%, 15%);
-    --Dark-Grey:	hsl(0, 0%, 5%);
+    --Black:	hsl(0, 0%, 5%);
     --Black:	hsl(0, 0%, 0%);
     --White:hsl(220, 23%, 97%);
   }             
@@ -197,7 +197,7 @@
     .overview-text{
     padding:0 1.5em;
     line-height: 1.5em;
-    color: var(--Dark-Grey);
+    color: var(--Black);
     
     }
     /* About me list */
@@ -238,7 +238,7 @@
     font-family: var(--heading-font-family);
     font-weight: 700;
     margin-right: 1em;
-    color: var(--Dark-Grey);
+    color: var(--Black);
     }
     
     .info-list li .title:after {
@@ -736,7 +736,7 @@
     border: 0;
     outline: 0;
     border: 2px solid var(--Primary-Light);
-    color: var(--Dark-Grey);
+    color: var(--Black);
     font-weight: bold;
     text-shadow: none;
     background: none;
