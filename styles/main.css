@@ -8,16 +8,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Urbanist:wght@400;500;600;700;800;900&display=swap');
 
 
-  :root{
-    --Primary-Light:hsla(333, 56%, 16%, 0.95);
-    --Primary-Font-Light:hsla(204, 4%, 9%, 0.95);
-    --Secondary-Light:hsla(332, 67%, 27%, 0.95);
-    --Third-Light:hsla(332, 64%, 46%, 1);
-    --Contrast-Light:hsla(20, 18%, 23%, 0.95);
-    --White:hsl(240,100%,99%);
-    --heading-font-family:'Fredoka',Helvetica;
-    --text-font-family:'Lato', sans-serif;
-    --Purple:	hsl(301, 63%, 13%, 0.95); 
+
+:root{
+      --Green:#61DBD1;
+      --Black: #262626;
+      --Blue:#00ADDC;
+      --Purple:#7F3F98;
+      --Grey:#E5E5E5;
+      --White:hsl(240,100%,99%);
+      --heading-font-family:'Saira',Helvetica;
+      --text-font-family:'Lato', sans-serif; 
     --Pink:	hsl(322, 70%, 33%);
     --Bleu:	hsl(174, 57%, 45%);
     --Green:hsl(135, 36%, 62%);

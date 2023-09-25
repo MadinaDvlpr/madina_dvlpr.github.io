@@ -8,23 +8,21 @@
 
 
 :root{
-  --Primary-Light:hsla(333, 56%, 16%, 0.95);
-  --Primary-Font-Light:hsla(204, 4%, 9%, 0.95);
-  --Secondary-Light:hsla(332, 67%, 27%, 0.95);
-  --Third-Light:hsla(332, 64%, 46%, 1);
-  --Contrast-Light:hsla(20, 18%, 23%, 0.95);
+  --Green:#61DBD1;
+  --Black: #262626;
+  --Blue:#00ADDC;
+  --Purple:#7F3F98;
+  --Grey:#E5E5E5;
   --White:hsl(240,100%,99%);
-  --heading-font-family:'Fredoka',Helvetica;
-  --text-font-family:'Urbanist', sans-serif;
-  --Purple:	hsl(301, 63%, 13%); 
-  --Pink:	hsl(322, 70%, 33%);
-  --Bleu:	hsl(174, 57%, 45%);
-  --Green:hsl(135, 36%, 62%);
-  --Grey:	hsl(0, 0%, 15%);
-  --Dark-Grey:	hsl(0, 0%, 5%);
-  --Light-Grey: hsl(240, 4%, 95%);
-  --Black:	hsl(0, 0%, 0%);
-  --White:hsl(220, 23%, 97%);
+  --heading-font-family:'Saira',Helvetica;
+  --text-font-family:'Lato', sans-serif; 
+--Pink:	hsl(322, 70%, 33%);
+--Bleu:	hsl(174, 57%, 45%);
+--Green:hsl(135, 36%, 62%);
+--Grey:	hsl(0, 0%, 15%);
+--Dark-Grey:	hsl(0, 0%, 5%);
+--Black:	hsl(0, 0%, 0%);
+--White:hsl(220, 23%, 97%);
 }
 
 body{

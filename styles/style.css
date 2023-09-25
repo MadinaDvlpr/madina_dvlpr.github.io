@@ -5,14 +5,21 @@
 }
 
 :root{
-  --Primary-Light:hsla(333, 56%, 16%, 0.95);
-  --Primary-Font-Light:hsla(204, 4%, 9%, 0.95);
-  --Secondary-Light:hsla(332, 67%, 27%, 0.95);
-  --Third-Light:hsla(332, 64%, 46%, 1);
-  --Contrast-Light:hsla(20, 18%, 23%, 0.95);
+  --Green:#61DBD1;
+  --Black: #262626;
+  --Blue:#00ADDC;
+  --Purple:#7F3F98;
+  --Grey:#E5E5E5;
   --White:hsl(240,100%,99%);
   --heading-font-family:'Saira',Helvetica;
   --text-font-family:'Lato', sans-serif; 
+--Pink:	hsl(322, 70%, 33%);
+--Bleu:	hsl(174, 57%, 45%);
+--Green:hsl(135, 36%, 62%);
+--Grey:	hsl(0, 0%, 15%);
+--Dark-Grey:	hsl(0, 0%, 5%);
+--Black:	hsl(0, 0%, 0%);
+--White:hsl(220, 23%, 97%);
 }
 
 body{
@@ -20,7 +27,7 @@ body{
 }
 
 /* h1, h2, h3 {
-color: var(--Primary-Light);
+color: var(--Green);
 font-family: var(--heading-font-family);
 font-weight: bold;
 line-height: 1.5em;
@@ -28,7 +35,7 @@ margin-top: 0;
 margin-bottom: 1em;
 } */
 h4{
-color: var(--Third-Light);
+color: var(--Purple);
 font-family: var(--heading-font-family);
 font-weight: bold;
 line-height: 1.5em;
@@ -37,7 +44,7 @@ margin-bottom: 1em;
 font-size: 1em;
 }
 h5, h6{
-color: var(--Primary-Font-Light);
+color: var(--Black);
 font-family: var(--heading-font-family);
 font-weight: bold;
 margin-top: 0;
@@ -52,7 +59,7 @@ display: inline-block;
 position: relative;
 margin: 1.9em .7em .7em;
 padding: 0;
-color: var(--Primary-Light);
+color: var(--Green);
 }
 
 /*   
@@ -64,7 +71,7 @@ width: 2px;
 height: 100%;
 left: -10px;
 bottom: 0;
-background-color: var(--Third-Light);
+background-color: var(--Purple);
 } */
 
 main {
@@ -92,8 +99,8 @@ main {
 .inner-page .border{
 width: 110px;
   height: 110px;
-  border-top: 3px solid var(--Primary-Light);
-  border-left: 3px solid var(--Primary-Light);
+  border-top: 3px solid var(--Green);
+  border-left: 3px solid var(--Green);
   left: 2em;
   top: 2em;
   display: inline-block;
@@ -123,7 +130,7 @@ display: block;
   margin: 12px 0 0;
   font-size: 3.5em;
   line-height: 1.1em;
-  color: var(--Primary-Light);
+  color: var(--Green);
   z-index: 1;
   font-family: var(--heading-font-family);
   text-transform: capitalize;
@@ -131,7 +138,7 @@ display: block;
 .page-title h3.title-desc{
 display: inline-block;
 margin: 0;
-background-color: var(--Secondary-Light);
+background-color: var(--Blue);
 color: var(--White);
 padding: 0 10px;
 font-size: 1em;
@@ -153,11 +160,11 @@ min-height: 10em;
 text-align: center;
 margin:1em;
 font-family: var(--text-font-family);
-color: var(--Primary-Font-Light);
+color: var(--Black);
 }
 .card i{
 font-size: 3.5em;
-color: var(--Primary-Light);
+color: var(--Green);
 }
 .card img{
 width: 4em;
@@ -203,26 +210,26 @@ ABOUT PAGE
   .info-list a{
   padding-right: 1em;
   text-decoration: none;
-  color: var(--Primary-Font-Light);
+  color: var(--Black);
   }
   
   .info-list li a i{
   text-decoration: none;
-  color: var(--Primary-Light);
+  color: var(--Green);
   margin-top: 1.5em;
   width: 34px;
   height: 34px;
   background-color: transparent;
-  border: 1px solid var(--Primary-Light);
+  border: 1px solid var(--Green);
   text-align: center;
   font-size: 1.5em;
   padding: 5px 0;
   }
   .info-list li a i:hover{
   color: var(--White);
-  background-color: var(--Secondary-Light);
+  background-color: var(--Blue);
   transition: all .5s ease-in-out;
-  border: 1px solid var(--Secondary-Light);
+  border: 1px solid var(--Blue);
   
   }
   
@@ -407,7 +414,7 @@ ABOUT PAGE
     font-weight: 300;
     line-height: 1.1em;
     margin: 0 0 3px;
-    background-color: var(--Contrast-Light);
+    background-color: var(--Grey);
     padding: 5px px 5px 20px;
     margin-left: 1em;
     font-family: var(--heading-font-family);
@@ -420,7 +427,7 @@ ABOUT PAGE
     line-height: 1.5em;
   }
   .event-description {
-    color: var(--Primary-Font-Light);
+    color: var(--Black);
     font-size: .9em;
     font-weight: bold;
     line-height: 1.45em;
@@ -447,9 +454,9 @@ ABOUT PAGE
   }
   
   .progress-value {
-    /* box-shadow: 0 10px 40px -10px var(--Secondary-Light); */
+    /* box-shadow: 0 10px 40px -10px var(--Blue); */
     border-radius: 100px;
-    background: var(--Primary-Light);
+    background: var(--Green);
     height: .5em;
     width: 0;
     z-index: 1;
@@ -462,19 +469,19 @@ ABOUT PAGE
   top:-.3em;
   text-align: right;
   font-size: .8em;
-  color: var(--Primary-Light);
+  color: var(--Green);
   font-weight: bold;
   font-family: var(--heading-font-family);
   }
   
   .progress-value.webdesign-skill{
-    animation: load-WebDesign 2s ease-in-out forwards;
+    animation: load-apex 2s ease-in-out forwards;
   }
   .progress-value.print-skill{
-    animation: load-print 2s ease-in-out forwards;
+    animation: load-uml 2s ease-in-out forwards;
   }
   .progress-value.grafic-skill{
-    animation: load-grafic 2s ease-in-out forwards;
+    animation: load-agile 2s ease-in-out forwards;
   }
   .progress-value.html-skill{
     animation: load-html 2s ease-in-out forwards;
@@ -486,10 +493,13 @@ ABOUT PAGE
     animation: load-js 2s ease-in-out forwards;
   }
   .progress-value.php-skill{
-    animation: load-php 2s ease-in-out forwards;
+    animation: load-java 2s ease-in-out forwards;
   }
   .progress-value.wp-skill{
-    animation: load-wp 2s ease-in-out forwards;
+    animation: load-need 2s ease-in-out forwards;
+  }
+  .progress-value.wp-skill{
+    animation: load-spec 2s ease-in-out forwards;
   }
   
   @keyframes load-apex {
@@ -528,7 +538,10 @@ ABOUT PAGE
     0% { width: 0; }
     100% { width: 50%; }
   }
-  
+  @keyframes load-agile {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
   /*=========================================================================
     CONTACT PAGE
   ==========================================================================*/
@@ -545,13 +558,13 @@ ABOUT PAGE
   width: 100%;
   height: 2em;
   padding: .3em;
-  color: var(--Primary-Font-Light);
+  color: var(--Black);
   justify-content: flex-start;
   align-items: center;
   font-size: 1.5em;
   }
   .contact-info-block p{
-  color: var(--Primary-Font-Light);
+  color: var(--Black);
   font-size: 0.8em;
   font-family: var(--text-font-family);
   
@@ -667,7 +680,7 @@ ABOUT PAGE
   .label-pic{
       width: 8rem;
       height: 2.5rem;
-      background: var(--Primary-Light);
+      background: var(--Green);
       position: relative;
       top:45%;
       right: -6rem;
@@ -685,11 +698,11 @@ ABOUT PAGE
   }
   
   .label-pic a:hover{
-      color: var(--Contrast-Light);
+      color: var(--Grey);
   }
   
  .label-pic:hover{
-    color: var(--Secondary-Light);
+    color: var(--Blue);
     background-color: var(--White);
   }
   .form-control, .form-control:focus, .has-error .form-control, .has-error .form-control:focus {
@@ -721,7 +734,7 @@ ABOUT PAGE
   line-height: 1.2;
   border: 0;
   outline: 0;
-  border: 2px solid var(--Primary-Light);
+  border: 2px solid var(--Green);
   color: var(--Dark-Grey);
   font-weight: bold;
   text-shadow: none;
@@ -733,7 +746,7 @@ ABOUT PAGE
   }
    */
   /* .button:hover{
-    background-color: var(--Primary-Light);
+    background-color: var(--Green);
     color: var(--White);
   } */
   
@@ -745,7 +758,7 @@ ABOUT PAGE
     bottom:0;
     left:0;
     right:0;
-    background-color: var(--Primary-Light);
+    background-color: var(--Green);
     z-index: -1;
     transform:scaleX(0);
     transform-origin: left;
@@ -775,7 +788,7 @@ ABOUT PAGE
   }
   /* .inner-page{
     scrollbar-width: 3px; /* "auto" or "thin" 
-    scrollbar-color: var(--Primary-Light) rgb(164, 164, 164); /* scroll thumb and track 
+    scrollbar-color: var(--Green) rgb(164, 164, 164); /* scroll thumb and track 
     transition:all 0.2s 0s ease-in;
   } */
   .inner-page::-webkit-scrollbar-track {
@@ -783,7 +796,7 @@ ABOUT PAGE
   }
   
   .inner-page::-webkit-scrollbar-thumb {
-    background-color: var(--Primary-Light); /* color of the scroll thumb */
+    background-color: var(--Green); /* color of the scroll thumb */
     transition:all 0.2s 0s ease-in;
     border-radius: 20px; /* roundness of the scroll thumb */
      /*border: 2px solid rgb(61, 61, 61); creates padding around scroll thumb */
@@ -791,7 +804,7 @@ ABOUT PAGE
   /* Works on Firefox */
   .inner-page * {
   scrollbar-width: 3px;
-  scrollbar-color: var(--Primary-Light)rgb(164, 164, 164);
+  scrollbar-color: var(--Green)rgb(164, 164, 164);
   transition:all 0.2s 0s ease-in;
   cursor: pointer;
   }
@@ -809,7 +822,7 @@ ABOUT PAGE
   }
   
   *::-webkit-scrollbar-thumb {
-  background-color: var(--Primary-Light);
+  background-color: var(--Green);
   border-radius: 20px;
   transition:all 0.2s 0s ease-in;
   /* border: 2px solid orange; */
@@ -853,12 +866,12 @@ ABOUT PAGE
   }
   
   /* .portfolio-filters li a, .portfolio-filters li a:hover {
-  color: var(--Primary-Font-Light);
+  color: var(--Black);
   text-decoration: none;
   } */
   .filter:hover,
   .filter.active{
-  background-color: var(--Primary-Light);
+  background-color: var(--Green);
   color: var(--White);
   font-weight: bold;
   transform: translateX(5%);
@@ -885,14 +898,14 @@ ABOUT PAGE
   }
   
   .project-description:hover, .portfolio-grid figure a{
-  background-color: var(--Primary-Light);
+  background-color: var(--Green);
   color: var(--White);
   opacity: 1;
   transition: width .1s ease-in;
   } 
   
   .portfolio-grid img:hover{
-  background-color: var(--Primary-Light);
+  background-color: var(--Green);
   }
   
   .portfolio-grid img {
@@ -970,7 +983,7 @@ ABOUT PAGE
   
   .tech-block div{
     width: 6em;
-    background-color: var(--Secondary-Light);
+    background-color: var(--Blue);
     margin:.5em;
     padding: .5em;
     font-size: .7em;
@@ -1028,7 +1041,7 @@ ABOUT PAGE
 
 .carousel__caption a {
 text-decoration: none;
-color: var(--Primary-Light);
+color: var(--Green);
 }
 
 .carousel{
@@ -1060,7 +1073,7 @@ display: block;
 position: relative;
 width: 100%;
 height: 350px;
-box-shadow: 0 0 20px var(--Primary-Font-Light);
+box-shadow: 0 0 20px var(--Black);
 }
 
 .carousel__input:checked + .carousel__slide{
@@ -1072,7 +1085,7 @@ opacity:1;
 position: absolute;
 display: none;
 cursor: pointer;
-background: var(--Primary-Light);
+background: var(--Green);
 top: 210px;
 left: 50px;
 width: 40px;
@@ -1084,7 +1097,7 @@ z-index: 10;
 position: absolute;
 content:"";
 padding: 8px;
-box-shadow: 1px -1px 0 1px var(--Primary-Font-Light) inset;
+box-shadow: 1px -1px 0 1px var(--Black) inset;
 }
 
 .carousel__arrow--prev{
@@ -1136,8 +1149,8 @@ width: 10px;
 height: 10px;
 border-radius: 50%;
 margin: 0 4px 0;
-background: var(--Primary-Font-Light);
-border: 1px solid var(--Primary-Light);
+background: var(--Black);
+border: 1px solid var(--Green);
 }
 
 #carousel__slide--1:checked ~ .carousel__arrow--1 ~ .carousel__bullets li:nth-child(1),
@@ -1146,5 +1159,5 @@ border: 1px solid var(--Primary-Light);
 #carousel__slide--4:checked ~ .carousel__arrow--4 ~ .carousel__bullets li:nth-child(4),
 #carousel__slide--5:checked ~ .carousel__arrow--5 ~ .carousel__bullets li:nth-child(5){
 background: rgb(189, 184, 184);
-box-shadow: inset 0 0 0 2px var(--Primary-Font-Light);
+box-shadow: inset 0 0 0 2px var(--Black);
 }
