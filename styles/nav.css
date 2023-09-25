@@ -9,20 +9,14 @@
 
 :root{
   --Green:#61DBD1;
-  --Black: #262626;
+  --Dark-Grey: #262626;
   --Blue:#00ADDC;
   --Purple:#7F3F98;
   --Grey:#E5E5E5;
-  --White:hsl(240,100%,99%);
   --heading-font-family:'Saira',Helvetica;
   --text-font-family:'Lato', sans-serif; 
---Pink:	hsl(322, 70%, 33%);
---Bleu:	hsl(174, 57%, 45%);
---Green:hsl(135, 36%, 62%);
---Grey:	hsl(0, 0%, 15%);
---Black:	hsl(0, 0%, 5%);
---Black:	hsl(0, 0%, 0%);
---White:hsl(220, 23%, 97%);
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
 }
 
 body{
@@ -114,7 +108,7 @@ color: var(--Purple);
   flex-direction: column;
   position: relative;
   align-items: center;
-  background-color: var(--Purple);
+  background-color: var(--Black);
   color: var(--White);
   height: 100vh;
   min-width: 200px;
