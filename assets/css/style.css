@@ -15,15 +15,15 @@ p {
 
 /* =============VARIABLES=========== */
 :root{
-  --Dark-Grey: #131313;
-  --Light-Grey: #8B8B8C;
+  --Dark-Grey: #F2F2F2;
+  --Light-Grey: #BFBFBF;
   --Pink: #8F1863;
-  --Purple: #341435;
+  --Purple: #7F3F98;
   --Black: #0B0C0C;
   --White: #F2F2F2; 
-  --Green: #7BC18C;
-  --Blue: #47ABBF;
-  --Light-Blue: #9ED5E9;
+  --Green: #61DBD1;
+  --Blue: #00ADDC;
+  --Light-Blue: #C5F3FF;
 
 }
 
