@@ -492,21 +492,9 @@ ABOUT PAGE
     animation: load-wp 2s ease-in-out forwards;
   }
   
-  @keyframes load-WebDesign {
+  @keyframes load-apex {
     0% { width: 0; }
-    100% { width: 70%; }
-  }
-  @keyframes load-print {
-    0% { width: 0; }
-    100% { width: 30%; }
-  }
-  @keyframes load-grafic {
-    0% { width: 0; }
-    100% { width: 30%; }
-  }
-  @keyframes load-html {
-    0% { width: 0; }
-    100% { width: 90%; }
+    100% { width: 80%; }
   }
   @keyframes load-css {
     0% { width: 0; }
@@ -514,15 +502,31 @@ ABOUT PAGE
   }
   @keyframes load-js {
     0% { width: 0; }
+    100% { width: 60%; }
+  }
+  @keyframes load-html {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+  @keyframes load-java {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  @keyframes load-sql {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  @keyframes load-spec {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+  @keyframes load-need {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+  @keyframes load-uml {
+    0% { width: 0; }
     100% { width: 50%; }
-  }
-  @keyframes load-php {
-    0% { width: 0; }
-    100% { width: 40%; }
-  }
-  @keyframes load-wp {
-    0% { width: 0; }
-    100% { width: 70%; }
   }
   
   /*=========================================================================
