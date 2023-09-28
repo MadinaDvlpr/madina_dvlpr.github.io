@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+
+/* =============VARIABLES=========== */
+:root{
+  --Green:#61DBD1;
+  --Dark-Grey: #262626;
+  --Blue:#00ADDC;
+  --Purple:#7F3F98;
+  --Grey:#E5E5E5;
+  --heading-font-family:'Saira',Helvetica;
+  --text-font-family:'Lato', sans-serif; 
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
+  --ff-text: 'Poppins', sans-serif;
+  --body-color: #E4E9F7;
+    --nav-color: hsl(220, 23%, 97%) ;
+    --side-nav: #010718;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+}
+
+
+/* =============GENERAL STYLING=========== */
+body{
+    height: 100vh;
+  }
+
+
+  /* **********************Dark Mode******************** */
+  
+body.dark{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #CCC;
+    --search-bar: #242526;
+}
+body.dark nav{
+    border: 1px solid #393838;
+}
+
+  .dark-light i,
+  .dark-light a i,
+  .dark-light li a,
+  .searchToggle i{
+      color: var(--White);
+      font-size: 22px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  .dark-light i.sun{
+      opacity: 1;
+      pointer-events: none;
+      
+  }
+  .dark-light.active i.sun,
+  .dark-light.active a i{
+      opacity: 1;
+      pointer-events: auto;
+  }
+  .dark-light.active i.moon{
+      opacity: 1;
+      pointer-events: none;
+  }
+  
+
+/* =============Navbar=========== */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-bar .sidebarOpen{
+    color: var(--Black);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+nav .nav-bar .logo a{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--White);
+    text-decoration: none;
+}
+.menu .logo-toggle{
+    display: none;
+}
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--White);
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-links li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--Black);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.nav-links li:hover a::before{
+    opacity: 1;
+}
+.nav-bar .darkLight-searchBox{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    color: #010718;
+
+}
+
+
+/* =============Home Grid Template=========== */
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    font-family: var(--ff-text);
+  }
+  
+  /* ***************************************** */
+  .nav { grid-area: 1 / 1 / 2 / 5; }
+  
+  .hero { grid-area: 2 / 1 / 4 / 5; }
+  
+  .hero_Desc { grid-area: 2 / 1 / 4 / 3; }
+  
+  .hero_img { grid-area: 2 / 3 / 4 / 5; }
+  
+  .footer { grid-area: 4 / 1 / 6 / 5; }
+  
+  .footer_desc { grid-area: 4 / 1 / 5 / 3; }
+  
+  .footer_socials { grid-area: 4 / 3 / 5 / 5; }
+  
+  .footer_credits { grid-area: 5 / 1 / 6 / 5; }
+  /* ****************************************** */
+
+  .nav-logo{
+    width: 60px;
+    
+}
+#active:checked ~ .wrapper{
+    clip-path: circle(75%);
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4159d8);
+    clip-path: circle(1.5625em at calc(100% -45%) 2.8125em);
+}
+#active:checked ~ .menu-btn{
+    background: var(--White);
+    color: #4159d8;
+}
+#active:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+.menu-btn{
+    position: absolute;
+    right: 20%;
+    z-index: 2;
+    text-align: center;
+    height: 3.125em;
+    width: 3.125em;
+    background: linear-gradient(-135deg, #c850c0, #4159d8);
+    border-radius: 50%;
+    color: var(--White);
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li{
+    margin: 0.9375em 0;
+}
+.wrapper ul li a{
+    text-decoration: none;
+    color: var(--White);
+    font-size:1.875em;
+    font-weight: 500;
+    padding: 0.3125em 3.125em;
+    position: relative;
+    line-height: 3.125em;
+    transition: all 0.3s ease;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+}
+
+/* µµµµµµµµµµµµMedia Queries************** */
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+    nav.active .menu{
+        left: -0%;
+    }
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .nav-links li a{
+        display: block;
+        margin-top: 20px;
+    }
+}
