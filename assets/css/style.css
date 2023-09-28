@@ -65,10 +65,10 @@ header{
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background: var(--Dark-Grey);
     padding: .5rem 9rem; 
     position: fixed;
     z-index: 1000;
+    background-color: var(--Black);
 } 
 
 .nav-logo{
@@ -370,7 +370,7 @@ align-items: center;
     /* box-shadow: 0 10px 40px -10px var(--Secondary-Light); */
     border-radius: 100px;
     background: var(--Blue);
-    height: .5em;
+    height: .35em;
     width: 0;
     z-index: 1;
     font-family: 'Work Sans', 'Poppins';
@@ -389,128 +389,79 @@ align-items: center;
 
 
 /* animation des indicateurs */
-.progress-value.webdesign-skill{
-    animation: load-WebDesign 2s ease-in-out forwards;
-  }
-  .progress-value.print-skill{
-    animation: load-print 2s ease-in-out forwards;
-  }
-  .progress-value.grafic-skill{
-    animation: load-grafic 2s ease-in-out forwards;
-  }
-  .progress-value.html{
-    animation: load-html 2s ease-in-out forwards;
-  }
-  .progress-value.css{
-    animation: load-css 2s ease-in-out forwards;
-  }
-  .progress-value.js{
-    animation: load-js 2s ease-in-out forwards;
-  }
-  .progress-value.illustrator{
-    animation: load-illustrator 2s ease-in-out forwards;
-  }
-  .progress-value.indesign{
-    animation: load-indesign 2s ease-in-out forwards;
-  }
-  .progress-value.photoshop{
-    animation: load-photoshop 2s ease-in-out forwards;
-  }
-
-  .progress-value.premiere{
-    animation: load-premiere 2s ease-in-out forwards;
-  }
-  .progress-value.afterEffects{
-    animation: load-afterEffects 2s ease-in-out forwards;
-  }
-
-  .progress-value.seo{
-    animation: load-indesign 2s ease-in-out forwards;
-  }
-  .progress-value.scrum{
-    animation: load-scrum 2s ease-in-out forwards;
-  }
-  .progress-value.analytics{
-    animation: load-analytics 2s ease-in-out forwards;
-  }
-  .progress-value.project{
-    animation: load-project 2s ease-in-out forwards;
-  }
-  .progress-value.front{
-    animation: load-front 2s ease-in-out forwards;
-  }
-
-  @keyframes load-WebDesign {
-    0% { width: 0; }
-    100% { width: 70%; }
-  }
-
-  @keyframes load-print {
-    0% { width: 0; }
-    100% { width: 30%; }
-  }
-
-  @keyframes load-grafic {
-    0% { width: 0; }
-    100% { width: 30%; }
-  }
-
-  @keyframes load-html {
-    0% { width: 0; }
-    100% { width: 90%; }
-  }
-  @keyframes load-css {
-    0% { width: 0; }
-    100% { width: 60%; }
-  }
-  @keyframes load-js {
-    0% { width: 0; }
-    100% { width: 50%; }
-  }
-
-  @keyframes load-illustrator {
-    0% { width: 0; }
-    100% { width: 50%; }
-  }
-  @keyframes load-indesign {
-    0% { width: 0; }
-    100% { width: 50%; }
-  }
-  @keyframes load-photoshop {
-    0% { width: 0; }
-    100% { width: 40%; }
-  }
-  @keyframes load-premiere {
-    0% { width: 0; }
-    100% { width: 40%; }
-  }
-  @keyframes load-afterEffects {
-    0% { width: 0; }
-    100% { width: 40%; }
-  }
-  @keyframes load-scrum {
-    0% { width: 0; }
-    100% { width: 80%; }
-  }
-  @keyframes load-seo {
-    0% { width: 0; }
-    100% { width: 80%; }
-  }
-
-  @keyframes load-analytics {
-    0% { width: 0; }
-    100% { width: 50%; }
-  }
-  @keyframes load-project {
-    0% { width: 0; }
-    100% { width: 70%; }
-  }
-  @keyframes load-front {
-    0% { width: 0; }
-    100% { width: 60%; }
-  }
-
-
+.progress-value.apex{
+  animation: load-apex 2s ease-in-out forwards;
+}
+.progress-value.uml{
+  animation: load-uml 2s ease-in-out forwards;
+}
+.progress-value.agile{
+  animation: load-agile 2s ease-in-out forwards;
+}
+.progress-value.html{
+  animation: load-html 2s ease-in-out forwards;
+}
+.progress-value.css{
+  animation: load-css 2s ease-in-out forwards;
+}
+.progress-value.js{
+  animation: load-js 2s ease-in-out forwards;
+}
+.progress-value.uml{
+  animation: load-uml 2s ease-in-out forwards;
+}
+.progress-value.need{
+  animation: load-need 2s ease-in-out forwards;
+}
+.progress-value.spec{
+  animation: load-spec 2s ease-in-out forwards;
+}
+.progress-value.sql{
+  animation: load-sql 2s ease-in-out forwards;
+}
+.progress-value.agile{
+  animation: load-agile 2s ease-in-out forwards;
+}
+@keyframes load-apex {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+@keyframes load-css {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+@keyframes load-js {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+@keyframes load-html {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+@keyframes load-java {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+@keyframes load-sql {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+@keyframes load-spec {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+@keyframes load-need {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+@keyframes load-uml {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+@keyframes load-agile {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
 
 
 
@@ -793,7 +744,7 @@ background: var(--Dark-Grey);
 
 footer{
     height: 10vh;
-    background: var(--Dark-Grey);
+    background: var(--Black);
     color: var(--White);
     text-align: center;
     width: 100vw;
@@ -1855,6 +1806,9 @@ flex-direction: column;
   .portfolio-container-h{
     flex-direction: column;
     align-items: center;
+  }
+  .resume-container{
+    flex-direction: column;
   }
 
 }

@@ -453,7 +453,7 @@ ABOUT PAGE
     /* box-shadow: 0 10px 40px -10px var(--Blue); */
     border-radius: 100px;
     background: var(--Green);
-    height: .5em;
+    height: .3em;
     width: 0;
     z-index: 1;
     
@@ -470,13 +470,13 @@ ABOUT PAGE
   font-family: var(--heading-font-family);
   }
   
-  .progress-value.webdesign-skill{
+  .progress-value.apex-skill{
     animation: load-apex 2s ease-in-out forwards;
   }
-  .progress-value.print-skill{
+  .progress-value.uml-skill{
     animation: load-uml 2s ease-in-out forwards;
   }
-  .progress-value.grafic-skill{
+  .progress-value.agile-skill{
     animation: load-agile 2s ease-in-out forwards;
   }
   .progress-value.html-skill{
@@ -488,16 +488,21 @@ ABOUT PAGE
   .progress-value.js-skill{
     animation: load-js 2s ease-in-out forwards;
   }
-  .progress-value.php-skill{
-    animation: load-java 2s ease-in-out forwards;
+  .progress-value.uml-skill{
+    animation: load-uml 2s ease-in-out forwards;
   }
-  .progress-value.wp-skill{
+  .progress-value.need-skill{
     animation: load-need 2s ease-in-out forwards;
   }
-  .progress-value.wp-skill{
+  .progress-value.spec-skill{
     animation: load-spec 2s ease-in-out forwards;
   }
-  
+  .progress-value.sql-skill{
+    animation: load-sql 2s ease-in-out forwards;
+  }
+  .progress-value.sql-agile{
+    animation: load-agile 2s ease-in-out forwards;
+  }
   @keyframes load-apex {
     0% { width: 0; }
     100% { width: 80%; }
