@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,291 +7,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>HOME | MADINA DEV</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/newhome.css">
+    <title>Document</title>
 </head>
 <body>
-  <header>  
     
-    <a href="./index.html" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
-    <nav class="navbar">
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
-        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
-        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
-        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
-    </ul>
-  </nav>
-  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
-    </header>
-  
-
-<!-- ------------ -->
-<!-- Social links -->
-<div class="social">
-  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
-  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</div>
-<!-- ------------ -->
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo nav-logo"><a href="#">{MadinaDvlpr.}</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">{MadinaDvlpr.}</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+                    <ul class="nav-links ">
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="./resume.html">Parcours</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <!-- <li><a href="./services.html">Services</a></li> -->
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="darkLight-searchBox nav-icons">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <div class="socialBox">
+                        <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>                      
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+        <main class="hero main">     
+            <div class="hero-desc">
+                <p> Hi &#128075, <br></p>
+                <p>Je m'appelle<br></p>
+                <p class="txt-gradient">Madina<br></p>
+                <p>Je code des trucs pour le web</p>
+            </div>
+            <div class="hero-pic">
+                <img class="hero-img" src="assets/img/hero.png" alt="">
+            </div>
+                
     
-
-   
-
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-description">
-          <h1>Hello, je suis Magdalena</h1>
-          <h2>Développeur Salesforce & Développeur Fullstack</h2>
-        
-          <p>
-            Le début de mon parcours professionnel a été marqué par le developpement commercial. J’ai occupé des fonctions de cadre commercial en France et en Angleterre où j’ai vecu pendant plus de 5 ans. Parallèlement, je me suis découvert une appétance pour les languages informatiques. En 2018   j'ai ainsi validé un MBA Ebusiness à l'ESG où j'ai approfondi mes connaissances en développement front et Back end. Je viens de valider une formation  de développeur Salesforce auprès d'Openclassrooms, niveau 6. Aujourd’hui, je souhaite donc évoluer vers un poste de Développeur Consultant Salesforce ou de Développeur Fullstack et mettre à profit l’ensemble de mes compétences.</p>
-          <span class="cta">À Propos <a href="./about.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>
+        </main>
         </div>
-        <div class="hero-image">
-        <img id="main-hero" src="assets/img/portrait-cv-good.png" alt="hero-image">
-        
-          <img  id="hero-graphic-1" src="assets/img/hero-home.png" alt="hero-image">
-        
-          <img id="hero-graphic-2" src="assets/img/square-pink.png" alt="hero-image">
-        
-          <img  id="hero-graphic-3" src="assets/img/hero-home-2.png" alt="hero-image">
-        
-        </div>
-              </div>
-    </section>
-
-
-    <section class="skill-section">
-
-      <div class="skills-container">
-
-      <div class="skills-image">
-<img id="main-skill" src="assets/img/photo-cv2.png" alt="ma photo de skills">
-<img  id="skill-graphic" src="assets/img/hero-home3.png" alt="hero-image">
-      </div>
-
-      <div class="skills-indicator">
-<div class="skills-icon">
-<div class="label"><img src="assets/img/dhome-create-1.png" alt=""><p>Créer</p></div>
-<div class="label"><img src="assets/img/dhome-todo-1.png" alt=""><p>
-  Faire</p></div>
-<div class="label"><img src="assets/img/dhome-goals-1.png" alt=""><p>Objectifs</p></div>
-</div>
-
-<p class="title">Je suis spécialisée en développement d'application Salesforce</p>
-        <div class="skills-info">
-          <h4>Administration Salesforce</h4>                               
-          <div class="progress">
-              <div class="progress-value front">
-                  <small>90%</small>
-              </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Madina Dvlpr.</h3>
+                <p>ma citattion préférée.</p>
+                <ul class="socials">
+                    <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>  
+                </ul>
             </div>
-          <h4>Language Apex</h4>
-          <div class="progress">
-              <div class="progress-value project">
-                  <small>80%</small>
-              </div>
+            <div class="footer-bottom">
+                <div>
+                <p>copyright &copy; Madina Dvlpr. </p>
+                <p>Made with <span class="txt-gradient">Love</span> and my <span class="txt-gradient">kitties  <i class="fa-solid fa-cat"></i></span></p>
             </div>
-
-          <h4>Création Application Lightning</h4>
-          <div class="progress">
-              <div class="progress-value webdesign-skill">
-                  <small>90%</small>
-              </div>
-            </div> 
-        </div>
-
-        <a href="">  <button class="btn">Télécharger CV</button></a>
-      </div>
-    </div>
-    </section>
-
-
-
-     <section class="speciality-section">
-      <h2>Ce que je fais</h2>
-      <p class="title">Mes compétences</p>
-
-      <div class="cards-container card-item home-cards">
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                  <ion-icon name="settings"></ion-icon>
-                </div>
-                <h3><a href="javascript:void(0);">Développement Back end</a></h3>
-                <h5>de A à Z</h5>
-                <p>
-                   Création de nouvelles fonctionnalités de la programmation jusqu'aux tests en Java, Apex.
-                </p>
+                        <div class="footer-menu">
+                          <ul class="f-menu">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./resume.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                          </ul>
+                        </div>
             </div>
-        </div>
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                  <ion-icon name="brush"></ion-icon>
-                </div>
-                <h3><a href="javascript:void(0);">Optimisation Back End Apex</a></h3>
-                <h5>Salesforce</h5>
-                <p>
-                    Optimisation de back end pour application Salesforce répondant aux best practices.
-                </p>
-            </div>
-        </div>
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                  <ion-icon name="logo-buffer"></ion-icon>
-                </div>
-                <h3><a href="javascript:void(0);">Consulting</a></h3>
-                <h5>Spécifications</h5>
-                <p>
-                    Recueil des besoins client afin de rédiger les specifications techniques et fonctionnelles.
-                </p>
-            </div>
-        </div>
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                  <ion-icon name="phone-portrait"></ion-icon>
-                </div>
-                <h3><a href="javascript:void(0);">Application</a></h3>
-                <h5>Lightning</h5>
-                <p>
-                    Création d'applications Salesforce Lightning.
-                </p>
-            </div>
-        </div>
-
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                    <i class="fas fa-hashtag"></i>
-                </div>
-                <h3><a href="javascript:void(0);">Adminstration</a></h3>
-                <h5>Salesforce</h5>
-                <p>
-                    Paramétrage et administration d'application Salesforce.
-                </p>
-            </div>
-        </div>
-        
-        <div class="cards-col">
-            <div class="card-box">
-                <div class="i_div">
-                  <ion-icon name="stats-chart"></ion-icon>
-                </div>
-                <h3><a href="javascript:void(0);">Développement Java</a></h3>
-                <h5>Application</h5>
-                <p>Développement d'application et fonctionnnalités en Java.
-                </p>
-            </div>
-        </div>
-    </div>
-    </section>
-
-
-
-    <section class="portfolio-section">
-      <h2>Mon portfolio</h2>
-      <p class="title">Projets récents</p>
-
-  
-      <div class="grid">
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/portrait-vectoriel.png" alt="portrait vectoriel">
-          <div class="content fade">
-            <h5 class="name">Portrait Vectoriel</h5>
-              <small>Illustration</small>             
-              <div class="project-desc">
-                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
-            </div> 
-          </div>
-        </div>
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/memory.png" alt="memory card game">
-          <div class="content fade">
-            <h5 class="name">Memory Card Game</h5>
-              <small>web app</small>             
-              <div class="project-desc">
-                <a href="./memory-project.html"> <ion-icon name="eye-outline"></ion-icon>  </a>
-                <a href="./memory-game.html"> <ion-icon name="tv-outline"></ion-icon> </a>
-            </div> 
-          </div>
-        </div>
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/todo-project2.jpg" alt="photo du projet todo list">
-          <div class="content fade">
-            <h5 class="name">To do list App</h5>
-              <small>Web App</small>            
-              <div class="project-desc">
-                           <a href="./todo-project.html"> <ion-icon name="eye-outline"></ion-icon>  </a>
-                <a href="./todo.html"> <ion-icon name="tv-outline"></ion-icon> </a>
-            </div> 
-          </div>
-        </div>    
-
-      </div>
-
-      <span class="cta">Voir le portfolio <a href="./portfolio.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>   
-    </section>
-
-    <section class="follow-section">
-      <p class="title">Gardons le contact</p>
+        </footer>
+        <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/nav.js"></script>
      
-      <div class="follow-container">
-        <div class="follow-description">
-          <p >Pour toute demande de collaboration.</p>
-<p> Contactez moi par mail ou via les réseaux sociaux</p>
-<span class="cta">Contact <a href="./contact.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>
-        </div>
-        <div class="follow-grid">
-          <img class="grid-item-h" src="assets/img/projet1.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet2.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet3.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet4.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet5.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet6.jpg" alt="">        
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>2022 By Madina Dvlpr. </p>
-    </footer>
-
-
-
-    <!-- Scripts -->
-    <!-- <script>
-      $(window).scroll(function() {
-        $('#animatedElement').each(function(){
-        var imagePos = $(this).offset().top;
-    
-        var topOfWindow = $(window).scrollTop();
-          if (imagePos < topOfWindow+400) {
-            $(this).addClass("slideExpandUp");
-          }
-        });
-      });
-    </script> -->
-
-    <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/app.js"></script>
-   
 </body>
 </html>

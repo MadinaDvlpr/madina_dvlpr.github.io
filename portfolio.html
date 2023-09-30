@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,46 +12,48 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfolio | Madina Dev</title>
+    <link rel="stylesheet" href="assets/css/newhome.css">
+    <title>Document</title>
 </head>
 <body>
-  <header>  
     
-    <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
-    <nav class="navbar">
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
-        <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
-        <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
-        <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
-    </ul>
-  </nav>
-  <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
-    </header>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo nav-logo"><a href="#">{MadinaDvlpr.}</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">{MadinaDvlpr.}</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+                    <ul class="nav-links ">
+                      <li><a href="./index.html">Accueil</a></li>
+                      <li><a href="./newresume.html">Parcours</a></li>
+                      <li><a href="./portfolio.html">Portfolio</a></li>
+                      <!-- <li><a href="./services.html">Services</a></li> -->
+                      <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="darkLight-searchBox nav-icons">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+                    <div class="socialBox">
+                        <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>                      
+                    </div>
+                </div>
+            </div>
+        </nav>
   
-<!-- ------------ -->
-<!-- Social links -->
-<div class="social">
-  <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-  <a href="https://www.instagram.com/madina_afrolicious/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-  <a href="https://github.com/Magda-dev"><i class="fa-brands fa-github" target="_blank"></i></a>
-  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</div>
-<!-- ------------ -->
-    
-
    
     <section class="portfolio-section">
-      <h2>Mon portfolio</h2>
+      <h1>Mon portfolio</h1>
       <p class="title">Projets finalisés</p>
       <div class="filters">
         <!-- Portfolio filter -->
@@ -78,7 +80,7 @@
       <div class="grid">
 
         <div class="img-wrapper portfolio-item" data-tags='["all", "design"]'>
-          <img class="zoom" src="assets/img/portrait-vectoriel.png" alt="">
+          <img class="zoom" src="assets/img/projet1.png" alt="">
           <div class="content fade">
             <h5 class="name">Portrait Vectoriel</h5>
               <small>Illustration</small>
@@ -188,33 +190,32 @@
     </section>
 
 
-    <section class="follow-section">
-      <p class="title">Gardons le contact</p>
-      <p >Pour toute demande de collaboration.</p>
+    
 
-      <div class="follow-container">
-
-        <div class="follow-description">
-<p> Contactez moi par mail ou via les réseaux sociaux</p>
-<span class="cta">Contact <a href="./contact.html"><ion-icon name="arrow-forward-outline"></ion-icon></a></span>
-        </div>
-        <div class="follow-grid">
-          <img class="grid-item-h" src="assets/img/projet1.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet2.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet3.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet4.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet5.jpg" alt="">
-          <img class="grid-item-h" src="assets/img/projet6.jpg" alt="">
-          
-        </div>
+    <footer class="footer">
+      <div class="footer-content">
+          <h3>Madina Dvlpr.</h3>
+          <p>ma citattion préférée.</p>
+          <ul class="socials">
+              <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                  <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                  <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>  
+          </ul>
       </div>
-    </section>
-
-
-
-    <footer>
-      <p>2022 By Madina Dvlpr. </p>
-    </footer>
+      <div class="footer-bottom">
+          <div>
+          <p>copyright &copy; Madina Dvlpr. </p>
+          <p>Made with <span class="txt-gradient">Love</span> and my <span class="txt-gradient">kitties  <i class="fa-solid fa-cat"></i></span></p>
+      </div>
+                  <div class="footer-menu">
+                    <ul class="f-menu">
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./resume.html">About</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+      </div>
+  </footer>
 
 
     <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
