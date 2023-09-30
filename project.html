@@ -15,29 +15,40 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/newhome.css">
     <title>Projet| Madina Dev</title>
 </head>
 <body>
-    <header>  
-    
-        <a href="#" ><img class="nav-logo" src="assets/img/logo.png" alt="logo"></a>
-        <nav class="navbar">
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+  <nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo nav-logo"><a href="#">{MadinaDvlpr.}</a></span>
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="#">{MadinaDvlpr.}</a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+            <ul class="nav-links ">
+              <li><a href="home.html">Accueil</a></li>
+              <li><a href="resume.html">Parcours</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <ul class="nav-links">
-            <li class="nav-item"><a href="./index.html" class="nav-link"><!--<i class="fas fa-home nav-icon" aria-hidden="true"></i>-->Accueil</a></li> 
-            <li class="nav-item"><a href="./about.html" class="nav-link"><!--<i class="fas fa-address-card nav-icon" aria-hidden="true"></i>-->À propos</a></li>
-            <li class="nav-item"><a href="./resume.html" class="nav-link"><!--<i class="fas fa-map-signs nav-icon" aria-hidden="true"></i>-->Parcours</a></li>
-            <li class="nav-item"><a href="./portfolio.html"  class="nav-link"><!--<i class="fas fa-images nav-icon" aria-hidden="true"></i>-->Portfolio</a></li>
-            <li class="nav-item"><a href="./contact.html" class="nav-link"><!--<i class="fas fa-phone nav-icon"></i></i>-->Contact</a></li>
-        </ul>
-      </nav>
-      <a href="./contact.html"> <button class="nav-btn">  Collaboration</button></a>
-        </header>
+        <div class="darkLight-searchBox nav-icons">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+            <div class="socialBox">
+                <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>                      
+            </div>
+        </div>
+    </div>
+</nav>
   
 <section class="projet-section">
 <div class="description">
@@ -45,97 +56,68 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur iste, veniam sunt ratione sed iusto repudiandae odit saepe aliquid!</p>
     <div class="project-infos">
 <div class="info-item">
-    <i class="fa fa-user"></i><p>Magdalena LARMET</p>
+    <i class="fa fa-user"></i><p>Madina Dvlpr.</p>
 </div>
 <div class="info-item">
-    <i class="fas fa-desktop"></i><a class="info-link" href="https://magda-dev.github.io/"><p>https://github.com/Magda-dev</p></a>
-<div class="info-item">
-    <i class="fas fa-alarm-clock"></i><p>31 Mars 2022</p>
-</div>
+    <i class="fas fa-desktop"></i><a class="info-link" href="https://github.com/MadinaDvlpr"><p>Repository du projet</p></a>
     </div>
+    <div class="info-item">
+      <i class="fas fa-alarm-clock"></i><p>31 Mars 2022</p>
+  </div>
 </div>
-
-<div class="pictures">
-    <div class="main-picture"> 
+</div>
+<div class="project-visuals">
+    <div class="main-visual"> 
         <img src="assets/img/projet1.jpg" alt="">
     </div>
 
-    <div class="picture-2">
+    <div class="second-visual">
         <img src="assets/img/projet2.jpg" alt="">
     </div>
 
-    <div class="picture-3">
+    <div class="third-visual">
         <img src="assets/img/projet3.jpg" alt="">
     </div>
   </div>
-
-</section>
-    
-
-
-<section class="cross-section">
-    <p class="title">Projets Similaires</p>
-    
-    <div class="grid">
-
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/portrait-vectoriel.png" alt="portrait vectoriel">
-          <div class="content fade">
-            <h5 class="name">Portrait Vectoriel</h5>
-
-              <small>Illustration</small>
-              
-              <div class="project-desc">
-                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
-            </div> 
-          </div>
-        </div>
-
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/memory.png" alt="memory card game">
-          <div class="content fade">
-            <h5 class="name">Memory Card Game</h5>
-
-              <small>web app</small>
-              
-              <div class="project-desc">
-                <a href="./memory-project.html"> <ion-icon name="eye-outline"></ion-icon>  </a>
-                <a href="./memory-game.html"> <ion-icon name="tv-outline"></ion-icon> </a>
-
-            </div> 
-          </div>
-        </div>
-
-        <div class="img-wrapper">
-          <img class="zoom" src="assets/img/todo-list.png" alt="photo du projet todo list">
-          <div class="content fade">
-            <h5 class="name">To do list App</h5>
-
-              <small>Web App</small>
-              
-              <div class="project-desc">
-                <a href=""> <ion-icon name="eye-outline"></ion-icon>  </a>
-                <a href="./memory-game.html"> <ion-icon name="tv-outline"></ion-icon> </a>
-            </div> 
-          </div>
-        </div>
-      </div>
+  <a href="http://" target="_blank" ><button class="brand-btn">Voir d'autres de projets</button></a>
 </section>
 
 
+    
 
 
-    <footer>
-      <p>2022 By Madina Dvlpr. </p>
-    </footer>
+
+
+<footer class="footer">
+  <div class="footer-content">
+      <h3>Madina Dvlpr.</h3>
+      <p>ma citattion préférée.</p>
+      <ul class="socials">
+          <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+              <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>  
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <div>
+      <p>copyright &copy; Madina Dvlpr. </p>
+      <p>Made with <span class="txt-gradient">Love</span> and my <span class="txt-gradient">kitties  </span></p>
+  </div>
+              <div class="footer-menu">
+                <ul class="f-menu">
+                  <li><a href="#index.html">Home</a></li>
+                  <li><a href="#resume.html">About</a></li>
+                  <li><a href="#contact.html">Contact</a></li>
+                </ul>
+              </div>
+  </div>
+</footer>
         
         
-            <script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://kit.fontawesome.com/d3954ff602.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="assets/js/app.js"></script>
+        <script src="assets/js/nav.js"></script>
            
         </body>
         </html>

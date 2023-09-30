@@ -24,12 +24,32 @@ box-sizing: border-box;
 
 /* =============VARIABLES=========== */
 :root {
---clr-primary: #1A77B5;
---clr-contrast: #240538;
---clr-light: #f4f4f4;
---clr-dark: #3F3849;
---clr-warning: rgb(63, 2, 2);
---clr-ok:rgb(10, 72, 12);
+  --Green:#61DBD1;
+  --Dark-Grey: hsl(0, 0%, 15%);
+  --Deep-Blue: hsl(243, 66%, 59%); 
+  --Blue: hsl(243, 66%, 59%);
+  --Purple:hsl(276, 51%, 47%);
+  --Pink: 	hsl(326, 57%, 48%);
+  --Fushia: 	hsl(340, 75%, 54%);
+  --Light-Grey:#E5E5E5;
+  --heading-font-family:'Saira',Helvetica;
+  --text-font-family:'Lato', sans-serif; 
+  --Black:	hsl(0, 0%, 0%);
+  --White:hsl(220, 23%, 97%);
+  --ff-text: 'Poppins', sans-serif;
+  --ff-headings: Arial, sans-serif;
+  --body-color: hsl(220, 23%, 97%);
+  --nav-color: hsl(220, 23%, 97%) ;
+  --side-nav: #010718;
+  --text-color:hsl(0, 0%, 0%);
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+  --background-horizontal: linear-gradient(0deg, rgba(64,93,230,1) 0%, rgba(88,81,219,1) 30%, rgba(131,58,180,1) 57%, rgba(193,53,132,1) 78%, rgba(193,48,108,1) 100%);
+  --background-vertical: linear-gradient(90deg, rgba(64,93,230,1) 0%, rgba(88,81,219,1) 35%, rgba(131,58,180,1) 53%, rgba(193,53,132,1) 70%, rgba(225,48,108,1) 100%);
+  --fs-xl: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+  --fs-600: clamp(0.7rem, 2vw + 1rem, 1.5rem);
+  --fs-400: clamp(0.5rem, 1.7vw + 1rem, 1rem);
+  --fs-xs: clamp(.375rem, 1vw + 1rem, .75rem);
 --spacer:2rem;
 --size:.75em;
 }
@@ -43,8 +63,8 @@ margin: 0;
 font-family: "Work Sans", sans-serif;
 font-weight: 300;
 font-size: 1.5rem;
-color: var(--clr-primary);
-background: url('../img/background-todo.png');
+color: var(--text-color);
+background: url('../img/bg-todo.jpg');
 background-repeat:  no-repeat ;
 background-size: cover;
 display: grid;
@@ -58,9 +78,9 @@ margin-bottom: 5rem;
 .title{
 grid-area: header;
 text-align: center;
-font-size: calc(7vw + 2rem); /*taille max et taille minimum que peut prendre le titre permet d'avaoir une taille responsive*/
+font-size: var(--fs-xl); /*taille max et taille minimum que peut prendre le titre permet d'avaoir une taille responsive*/
 font-weight: 700;
-color: #9ed5e938;
+color:var(--White)
 }
 
 .all-tasks{
@@ -68,7 +88,7 @@ grid-area: lists;
 background: transparent;
 border-radius: 8px;
 height: 100%;
-color: var(--clr-dark);
+color: var(--text-color);
 min-width: 30vw;
 min-height: 50vh;
 background: rgba( 244, 244, 244, 0.6 );
@@ -81,15 +101,17 @@ flex-direction: column;
 align-items: stretch;
 justify-content: flex-start;
 }
-
+.content label{
+  color: var(--text-color);
+}
 .task-list{
-font-size: 1.2rem;
+font-size: var(--fs-600);
 line-height: 1.7;
 list-style: circle;
 padding-left: 1.1em;
 }
 .list-header{
-background: rgba( 36, 5, 56, 0.45 );
+background: var(--Blue);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
@@ -98,7 +120,7 @@ padding: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: var(--clr-light);
+color: var(--White);
 border-top-left-radius: 8px;
 border-top-right-radius: 8px;
 min-height: 5rem;
@@ -137,7 +159,7 @@ cursor: pointer;
 background: transparent;
 border: 0;
 padding: .7rem;
-color: var(--clr-primary);
+color: var(--White);
 font-size: 1rem;
 border-radius: 8px;
 
@@ -147,14 +169,14 @@ border-radius: 8px;
 transform: scale(1.2);
 }
 .task .content .text:not(:read-only) {
-color: var(--clr-dark);
+color: var(--text-color);
 }
 
 .btn.create{
 font-weight: 900;
 transition: opacity 200ms ease-in;
 background: transparent;  
-color: var(--clr-primary)!important;
+color: var(--Blue)!important;
 }
 
 .btn.delete:hover,
@@ -168,7 +190,7 @@ opacity:.7;
 font-weight: 900;
 transition: opacity 200ms ease-in;
 background: transparent;  
-color: var(--clr-warning)!important;
+color: var(--Pink)!important;
 
 }
 
@@ -182,7 +204,7 @@ margin: 0 -0.5rem;
 .task .actions button {
 cursor: pointer;
 margin: 0 0.5rem;
-font-size: 1.125rem;
+font-size: var(--fs-600);
 font-weight: 700;
 text-transform: uppercase;
 transition: 0.4s;
@@ -218,9 +240,9 @@ margin-left: 1.5rem ;
 } */
 .new{
 background: transparent;
-color: var(--clr-dark);
+color: var(--text-color);
 font-size: inherit;
-border: 1px solid var(--clr-primary); 
+border: 1px solid var(--White); 
 outline: none;
 transition: border 200ms ease-in;
 padding: .25em;
@@ -238,7 +260,7 @@ opacity: 0.2;
 
 .new.list,
 .new.task{
-font-size: 1.2rem;
+font-size: var(--fs-600);
 margin-bottom: 0;
 }
 
@@ -250,7 +272,7 @@ font-weight: 700;
 
 grid-area: active-box;
 
-color: var(--clr-dark);
+color: var(--White);
 border-radius: 8px;
 min-width: 50vw;
 background: rgba( 244, 244, 244, 0.6 );
@@ -272,7 +294,7 @@ ion-icon {
 font-size: 1.5rem;
 }
 .todo-header{
-background: rgba( 26, 119, 181, 0.45 );
+background: var(--Fushia);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
@@ -293,7 +315,7 @@ margin: 0 1em 0 0;
 
 .task-count{
 margin: 0;
-font-size: 1rem;
+font-size: var(--fs-400);
 }
 
 .todo-body{
@@ -302,7 +324,7 @@ height: auto;
 }
 
 .new-task-creator .create{
-color: var(--clr-primary);
+color: var(--text-color);
 }
 .new-task-creator{
 display: flex;
@@ -340,7 +362,7 @@ display: inline-block;
 width: var(--size);
 height: var(--size);
 cursor: pointer;
-border: 2px solid var(--clr-dark);
+border: 2px solid var(--text-color);
 border-radius: 50%;
 margin-right: var(--size);
 transform: scale(1);
@@ -352,13 +374,13 @@ transition: transform 200ms ease-in;
 [type="checkbox"]:focus + label .custom-checkbox{ /*permet de permettre le controle via la tabulation*/
 transform: scale(1.2);  /* dès que je vais faire un hover sur le texte ou la chackbox alors la checkbox sera zoomée*/
 -webkit-transform: scale(1.2);
-color: var(--clr-primary);
+color: var(--White);
 }
 
 [type="checkbox"]:checked + label .custom-checkbox{
-background: var(--clr-primary);
-border-color: var(--clr-primary);
-box-shadow: inset 0 0 0px 3px var(--clr-light);
+background: var(--Blue);
+border-color: var(--Blue);
+box-shadow: inset 0 0 0px 3px var(--White);
 }
 
 [type="checkbox"]:checked + label{
@@ -376,7 +398,7 @@ width: 100%;
 left: 0;
 bottom: 1rem;
 margin-top: 2rem; */
-color: var(--clr-contrast);
+color: var(--Green);
 font-weight: 700;
 /* padding-top: 30rem;
 height: 8rem; */
@@ -385,19 +407,19 @@ width: 30%;
 
 .btn.edit{
 opacity: .7;
-font-size: 1rem;
+font-size: var(--fs-400);
 transition: color 200ms;
-color: var(--clr-primary);
+color: var(--Blue);
 
 background: none;
 }
 
 .btn.delete:hover{
-color: var(--clr-warning);
+color: var(--Pink);
 }
 
 .btn.edit:hover{
-color: var(--clr-ok);
+color: var(--Green);
 
 }
 
