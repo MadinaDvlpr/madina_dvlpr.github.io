@@ -2,6 +2,10 @@ let filters = document.querySelectorAll('.filter');
 let projects = document.querySelectorAll('.portfolio-item');
 
 
+
+
+
+
 for(let i = 0; i < filters.length; i++){
 
     filters[i].addEventListener('click', function(e){
@@ -19,11 +23,13 @@ for(let i = 0; i < filters.length; i++){
 //je parcours le tableaux des projets
         for(let k = 0; k < projects.length; k++){
             projects[k].classList.remove('delete');
+         
 
             console.log(projects);
             //je récupère les tags de chaque projet
         let targetData = projects[k].dataset.tags;
-        console.log(targetData);
+        console.log(targetData + "1");
+  
 
    //projects.forEach(project => {
 
