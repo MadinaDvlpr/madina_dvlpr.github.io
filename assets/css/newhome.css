@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 
@@ -372,7 +372,7 @@ nav .nav-bar .logo a{
     }
     .portfolio-filters li:hover,
     .portfolio-filters li.active{
-    background-color: var(--Pink);
+    background-color: var(--Blue);
     color: var(--White);
     font-weight: bold;
     transform: translateX(5%);
