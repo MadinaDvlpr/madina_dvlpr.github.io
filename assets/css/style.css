@@ -207,9 +207,6 @@ footer{
     gap: 0px 0px;
     grid-template-areas:
       "main main main main main main"
-      /* "main main main main main main"
-      "main main main main main main"
-      "footer footer footer footer footer footer " */
       "footer footer footer footer footer footer ";
     font-family: var(--ff-text);
     /* height: 100vh;
@@ -218,7 +215,10 @@ footer{
     margin-top: 4.375em;
   }
 
-  .main { grid-area: main; }
+  .main { 
+    grid-area: main;
+    max-width: 80vw;
+ }
   .footer { grid-area: footer; }
   
 
@@ -357,28 +357,27 @@ nav .nav-bar .logo a{
     /* max-width: 70vw; */
     min-height: 50vh;
     margin: auto;
-    gap: 2em;
     font-size: var(--fs-xl);
     margin-bottom: 2.5em;
 }
 
-.hero-desc,
+/* .hero-desc,
 .hero-img{
     width: 60vw;
-}
+} */
 .hero .hero-desc p{
         top: 4.125em;
         font-size: var(--fs-xl);
         font-family: var(--ff-text);
         font-weight: 700;
-        animation: slideRight 3s ease-in-out forwards;
-        max-width: 60vw;
-          
+        animation: slideRight 3s ease-in-out forwards;      
+}
+.hero-desc{
+    max-width: 60vw;
 }
 .hero img{
     width: 6em;
     height: 6em;
-    clip-path:ellipse(50% 50%);
     margin: 0 auto;
 }
 .hero-pic{
@@ -386,8 +385,11 @@ nav .nav-bar .logo a{
     align-items: center;
     width: 6.3em;
     height: 6.3em;
-    clip-path:ellipse(50% 50%);
     background: var(--background-vertical);   
+}
+.hero-pic,
+.hero img{
+    clip-path:ellipse(50% 50%);
 }
 
 /* ***********************PORTFOLIO************************ */
