@@ -13,7 +13,7 @@
   --Green:#61DBD1;
   --Dark-Grey: hsl(0, 0%, 15%);
   --Deep-Blue: hsl(243, 66%, 59%); 
-  --Blue: hsl(243, 66%, 59%);
+  --Blue: hsl(230, 77%, 58%);
   --Purple:hsl(276, 51%, 47%);
   --Pink: hsl(326, 57%, 48%);
   --Fushia: hsl(340, 75%, 54%);
@@ -28,6 +28,7 @@
   --text-font-family:'Lato', sans-serif; 
   --Black:	hsl(0, 0%, 0%);
   --White:hsl(220, 23%, 97%);
+  --Contrast: hsl(220, 23%, 97%);
   --ff-text: 'Montserrat', sans-serif;
   /* --ff-title: Arial, sans-serif; */
   --ff-heading: 'Montserrat', sans-serif;
@@ -43,8 +44,9 @@
   --fs-xl: clamp(1.3rem, 2.5vw + 1rem, 2.5rem);
   --fs-800: clamp(1rem, 2.4vw + 1rem, 2rem);
   --fs-600: clamp(0.7rem, 2vw + 1rem, 1.5rem);
+  --fs-500: clamp(0.6rem, 1.85vw + 1rem, 1.25rem);
   --fs-400: clamp(0.5rem, 1.7vw + 1rem, 1rem);
-  --fs-xs: clamp(.375rem, 1vw + 1rem, .75rem);
+  --fs-xs: clamp(.375rem, .75vw + 1rem, .75rem);
   --shadow: 0 5px 5px 2px rgba(0,0,0,0.1);
   --b-radius: 0.5rem;
   --b-radius-bubble: 50%;
@@ -131,6 +133,7 @@ main{
     --nav-color: hsl(0, 0%, 0%);
     --side-nav: #242526;
     --text-color:hsl(220, 23%, 97%);
+    --Contrast:hsl(0, 0%, 0%);
 }
 body.dark nav{
     border-bottom: 1px solid #393838;
@@ -258,7 +261,7 @@ nav .nav-bar .sidebarOpen{
 }
 nav .nav-bar .logo a{
     font-size: var(--fs-400);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--White);
     text-decoration: none;
     font-family: var(--ff-heading);
@@ -266,7 +269,7 @@ nav .nav-bar .logo a{
 .txt-gradient,
 .nav-logo a{
     width: 5em;
-    font-weight: 700;
+    /* font-weight: 500; */
     background: rgb(64,93,230);
     background: var(--background-vertical);
     background-clip: border-box;
@@ -282,14 +285,18 @@ nav .nav-bar .logo a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.darkLight box-icon{
+    font-size: var(--fs-500) ;
+}
 .socialBox{
     display: flex;
-    gap: .7em;
+    gap: .5em;
+    margin-left: 1em;
 }
-.socialBox a ion-icon{
+.socialBox a box-icon{
     justify-content: space-between;
     color: var(--text-color);
+    font-size: var(--fs-500);
 }
 .menu .logo-toggle{
     display: none;
@@ -519,23 +526,37 @@ nav .nav-bar .logo a{
     justify-content: center;
     align-items: center;
     padding: 3em 7em;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     position: relative;
+    width: 85vw;
 }
-.bio-content > *{
+/* .bio-content > *{
     flex:1;
+} */
+
+.left-el, 
+.right-el{
+    flex: 1 0 20%;
+}
+.bio-content p{
+    font-size: var(--fs-xs);
 }
 .img-container{
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); /*pour appliquer le shadow sur la forme clipart il faut agir en filter drop shadow sur le parent*/
 }
-.img-placeholder img {
+.img-container img {
     position: relative;
-    width: 60vw;
+    width: 40vw;
+    top: -4em;
 }
 .img-placeholder{
     position: absolute;
-    width: 500px;
-    height: 450px;
+    min-width: 35vw;
+    min-height: 55vh;
     background: var(--Deep-Blue);
     clip-path: polygon(0% 15%, 0 0, 15% 0%, 75% 0, 85% 15%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 30% 100%, 14% 88%, 0 77%);
     border-radius: 8px;
@@ -543,22 +564,30 @@ nav .nav-bar .logo a{
     box-shadow: var(--shadow);
 
 }
-
-.blob ion-icon{
-    color: var(--White);
-    font-weight: 700;
-    font-size: 2rem;
-    cursor: pointer;
+.blob{
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.blob box-icon{
+    fill: var(--White);
+    font-weight: 700;
+    font-size: 1rem;
+    /* cursor: pointer; */
+}
+/* .bubble box-icon{
+    color: var(--White);
+} */
 
 .bubble.love-icon {
     background-color: #FB2576 ;
 }
 
 .bubble{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -570,7 +599,7 @@ nav .nav-bar .logo a{
 .element1::after,
  .element2::before{
     content: '';
-    width: 7vw;
+    width: 8vw;
     height: 1px;
     background: var(--text-color);
     z-index: 5;
@@ -587,19 +616,16 @@ nav .nav-bar .logo a{
     position: absolute;
 }
 .element1::before{
-    left: 24rem;
-    top: .5rem;
+    left: 15rem;
 }
 .element2::before{
-    right: 27rem;
+    right: 18rem;
 }
 .element1::after{
-    left: 24rem;
-    top: 2.5rem;
-
+    left: 15rem;
 }
 .element2::after{
-    right: 27rem;
+    right: 18rem;
 
 }
 
@@ -608,24 +634,26 @@ nav .nav-bar .logo a{
     display: flex;
     align-items: center;
     background-color: var(--body-color);
-    padding: 1rem;
+    padding: .3rem;
     box-shadow: var(--shadow);
     border-radius: var(--b-radius);
-   /* width: 30vw; */
-   /* position: relative; */
-   /* right: -10vw; */
 }
 
 .blob.element1{
     position: relative;
-    top: -10rem;
-    left: -7rem;
+    top: -6rem;
+    left: -5rem;
 
 }
 .blob.element2{
     margin-left: 4rem;
 }
-
+.roi-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
 .self-roi{
     font-size: var(--fs-xl);
     font-weight: 400;
@@ -634,6 +662,7 @@ nav .nav-bar .logo a{
     align-items: center;
     gap: 1rem;
     color: var(--text-color);
+    /* margin: 0 1em; */
 }
 
 .self-roi ion-icon{
@@ -645,43 +674,38 @@ nav .nav-bar .logo a{
     padding: .5rem;
     color: var(--White);
 }
-.emphasize{
+p.emphasize{
     font-family: var(--ff-heading);
     font-weight: 600;
+    font-size: var(--fs-xl);
 }
-.polygone {
-    width: 90vw;
-    height: 65vh;
-    -webkit-clip-path: polygon(0% 24.94%, 81.3% 24.94%, 100% 74.81%, 0% 74.81% );
-    /* clip-path: inset(0% 45% 0% 45% round 10px); */
-    background-color: var(--Light-Grey);
-    border-radius: 8px;
-    position: absolute;
-    top: 50vh;
-    z-index: -4;
-}
-.tools-container{
-    display: flex;
-}
-.box{
-    flex: 1 1 0%;
-}
+
+
 
 .contact-page img{
 /* .bio-content img{ */
     width: 50vw;
 }
+/* 
+.resume-container{
+    margin-top: 70vh;
+} */
 
 .xp-container{
     display: flex;
     justify-content: space-between;
     border-bottom: .1em solid var(--Light-Grey);
-    height: 7vh;
+    height: 10vh;
 }
 .xp-container .job-title{
     font-size: var(--fs-600);
     font-weight: 500;
+    display: flex;
+    align-items: center;
 
+}
+.job-title box-icon{
+    margin-left: 1rem;
 }
 .company-details{
     display: flex;
@@ -716,8 +740,112 @@ nav .nav-bar .logo a{
     margin-bottom: 2.5em;
   }  
 
+/* Caroussel */
+.caroussel-container{
+    overflow-x: scroll;
+    padding: 1em;
+    cursor: pointer;
+    margin-bottom: 3em;
+}
+.caroussel{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.caroussel-inner{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    /* overflow: hidden; */
+    flex-wrap: nowrap;
+    /* animation: slideRight 1.5s ease-in-out forwards; */
+}
+.slide{
+    height: 100%;
+    flex: 1 0 15%;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.caroussel-container::-webkit-scrollbar-track {
+    background-color:transparent;
+}
 
+.caroussel-container::-webkit-scrollbar {
+    height: 6px;
+    background-color: transparent;
+}
 
+.caroussel-container::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 3px;
+}
+.caroussel-controls{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.caroussel-controls button{
+    /* position: absolute; */
+    /* display: inline-block; */
+    width:4em;
+    height: 4em;
+    border-radius: 50%;
+    background: none;
+    border: none;
+}
+#next{
+    /* font-size: var(--fs-600); */
+    /* left: 80em; */
+}
+/* button #next{
+    right: 0;
+} */
+.slide svg{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.slide.heroku{
+    background-color: hsl(262, 71%, 56%);
+}
+.slide.salesforce{
+    background-color: var(--Blue);
+}
+.slide.postman{
+    background-color: hsl(16, 100%, 61%);
+}
+.slide.postgre{
+    background-color:hsl(88, 100%, 59%);
+}
+.slide.java{
+    background-color: hsl(163, 100%, 64%);
+}
+.slide.javascript{
+    background-color:hsl(60, 100%, 50%);
+}
+.slide.git{
+    background-color: hsl(210, 3%, 15%);
+}
+.slide.github{
+    background-color: hsl(276, 61%, 39%);
+}
+.slide.html{
+    background-color: hsl(209, 100%, 56%);
+}
+.slide.css{
+    background-color:
+    #C32BAD ;
+}
+.slide.css:hover{
+    filter: blur(3px);
+    transform: scale(1.1);
+    content: 'CSS';
+}
   /* ********PROJECT PAGE TEMPLATE*********** */
   .project-visuals{
     display: grid; 
@@ -836,23 +964,32 @@ main.contact-page h3{
 }
 /* µµµµµµµµµµµµMedia Queries************** */
 
-@media (max-width: 790px) {
+@media (max-width: 767px) {
+    body{
+        padding: 0 2.5rem;
+    }
     nav .nav-bar .sidebarOpen{
         display: block;
     }
+    .nav-bar .dark-light box-icon,
+    .nav-bar .socialBox a box-icon{
+        width: .9em;
+    }
     .menu{
+        padding: .75rem 2.5rem;
         position: fixed;
         height: 100%;
-        width: 320px;
-        left: -100%;
+        width: 100%;
+        left: -111%;
         top: 0;
         /* padding: 20px; */
         background-color: var(--side-nav);
         z-index: 100;
         transition: all 0.4s ease;
     }
+ 
     nav.active .menu{
-        left: -0%;
+        left: -11.5vw;
     }
     nav.active .nav-bar .navLogo a{
         opacity: 0;
@@ -891,3 +1028,183 @@ main.contact-page h3{
         grid-template-columns: repeat(auto-fit, minmax(25em, 30em));
     }
 }
+ /* iPads (landscape) ----------- */
+ @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    :root{
+        --fs-xl: clamp(1.3rem, 2.5vw + 1rem, 2.5rem);
+        --fs-800: clamp(1rem, 2.4vw + .7rem, 2rem);
+        --fs-600: clamp(0.6rem, 2vw + .7rem, 1.5rem);
+        --fs-500: clamp(0.5rem, 1.375vw + .7rem, 1.125rem);
+        --fs-400: clamp(0.3rem, 1.25vw + .7rem, .7rem);
+        --fs-xs: clamp(.275rem, .75vw + .7rem, .7rem);
+        --shadow: 0 5px 5px 2px rgba(0,0,0,0.1);
+        --b-radius: 0.5rem;
+        --b-radius-bubble: 50%;
+      }
+    body{
+        padding: 0 4rem;
+    }
+    .nav-bar .dark-light box-icon,
+    .nav-bar .socialBox a box-icon{
+        width: 1em;
+    }
+    p.title{
+        font-size: var(--fs-600);
+    font-weight: 700;
+    color: var(--Blue);
+    margin: 0 0 .75rem 0;
+    letter-spacing: 0;
+}
+    }
+    .img-container .img-placeholder{
+        min-height: 30vh;
+    }
+    .blob.element1{
+        top: 0;
+        left: 0;
+    }
+    .element2::after,
+    .element2::before {
+        right: 9rem;
+    }
+    .element1::after,
+    .element1::before{
+        left: 8.5rem;
+    }
+    .element1::before,
+    .element2::after{
+        height: 4vh;
+    }
+    .element1::before{
+        top: .3rem;
+    }
+    .element1::after{
+        top: 2.5vh;
+    }
+    .blob.element2 {
+        margin-left: 1.5rem;
+    }
+    .blob {
+        width: 17vw;
+    }
+    .roi-container{
+        margin-top: 2rem;
+    }
+    .xp-container{
+        height: 6vh;
+    }
+    .xp-container .job-title {
+        font-size: var(--fs-500);
+    }
+    
+    }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+    /* Styles */
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+
+    }
+    
+   
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    }
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width : 1224px) {
+    /* Styles */
+    }
+    
+    /* Large screens ----------- */
+    @media only screen and (min-width : 1824px) {
+    /* Styles */
+    }
+    
+    /* iPhone 4 ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    /* iPhone 5 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6 ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6+ ----------- */
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S3 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S4 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    /* Samsung Galaxy S5 ----------- */
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    }
