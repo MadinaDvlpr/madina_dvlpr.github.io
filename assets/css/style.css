@@ -118,7 +118,7 @@ p.title{
     font-weight: 800;
     color: var(--Blue);
     margin: 0 0 1.5rem 0;
-    letter-spacing: .1rem;
+    letter-spacing: .03rem;
 }
 /* nav, 
 main{
@@ -964,6 +964,45 @@ main.contact-page h3{
 }
 /* µµµµµµµµµµµµMedia Queries************** */
 /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 701px) {
+    :root{
+        --fs-xl: clamp(1.3rem, 2vw + .1rem, 2.5rem);
+        --fs-800: clamp(1rem, 2.4vw + .3rem, 2rem);
+        --fs-600: clamp(0.6rem, 2vw + .3rem, 1.5rem);
+        --fs-500: clamp(0.5rem, 1.375vw + .3rem, 1.125rem);
+        --fs-400: clamp(0.3rem, 1.25vw + .2rem, .7rem);
+        --fs-xs: clamp(.275rem, .75vw + .2rem, .7rem);
+
+      }
+    .menu{
+        left: -130%;
+    }
+    .roi-container,
+    .blob{
+        display: none;
+    }
+    .img-container img {
+        width: 75vw;
+        top: -3em;
+    }
+    .img-container .img-placeholder{
+        width: 65vw;
+        min-height: 30vh;
+    }
+    /* .xp-container .job-title{
+        font-size: ;
+    } */
+    .portfolio-section{
+        
+        width: 100%;
+        
+    }
+    .grid{
+        justify-content: center;
+    }
+    
+
+    }
 
 
 @media only screen and (max-width: 767px) {
@@ -1019,10 +1058,25 @@ main.contact-page h3{
         margin-top: 20px;
         color: var(--White);
     }
-    .hero{
-        flex-direction: column;
-        justify-content: center;
+    .brand-btn{
+        height: 2rem;
+        width: 60%;
+
     }
+
+    .hero-desc{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-pic{flex: 1 1 100%;}
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .hero p{
         text-align: center;
     }
@@ -1031,11 +1085,7 @@ main.contact-page h3{
     }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 701px) {
-    .menu{
-        left: -120%;
-    }
-    }
+
  /* iPads (landscape) ----------- */
  @media only screen and (min-width : 768px) and (max-width : 1024px) {
     :root{
@@ -1045,9 +1095,7 @@ main.contact-page h3{
         --fs-500: clamp(0.5rem, 1.375vw + .7rem, 1.125rem);
         --fs-400: clamp(0.3rem, 1.25vw + .7rem, .7rem);
         --fs-xs: clamp(.275rem, .75vw + .7rem, .7rem);
-        --shadow: 0 5px 5px 2px rgba(0,0,0,0.1);
-        --b-radius: 0.5rem;
-        --b-radius-bubble: 50%;
+
       }
     body{
         padding: 0 4rem;
@@ -1063,21 +1111,21 @@ main.contact-page h3{
     margin: 0 0 .75rem 0;
     letter-spacing: 0;
 }
-    }
+   
     .img-container .img-placeholder{
         min-height: 30vh;
     }
     .blob.element1{
         top: 0;
-        left: 0;
+        left: -4vw;
     }
     .element2::after,
     .element2::before {
-        right: 9rem;
+        right: 14rem;
     }
     .element1::after,
     .element1::before{
-        left: 8.5rem;
+        left: 11.5rem;
     }
     .element1::before,
     .element2::after{
@@ -1110,8 +1158,46 @@ main.contact-page h3{
 
     
     /* Smartphones (landscape) ----------- */
-    @media only screen and (min-width : 321px) {
-    /* Styles */
+    @media only screen and (min-width : 1025px) {
+        .img-container .img-placeholder{
+            min-height: 39vh;
+        }
+        
+        .blob.element1,
+        .element1::after{
+            top: 2vh;
+        }
+
+        .blob.element1::before{
+            top: .25vh;
+        }
+        .blob.element1{
+            left: -3rem;
+        }
+        .blob.element2{
+            margin-left:clamp(3rem, 7rem, 8rem);
+        }
+        .element2::after,
+        .element2::before{
+            right: clamp(6rem, 24rem, 15rem);
+        }
+        .element1::before,
+        .element2::after{
+            height: 4vh;
+        }
+        .element1::after,
+        .element1::before{
+            left: clamp(8rem, 25rem, 13rem);
+        }
+        .element1::after, 
+        .element2::before{
+            width: 10vw;
+
+        }
+        .bubble {
+            width: 4rem;
+            height: 2rem;
+        }
     }
     
     /* Smartphones (portrait) ----------- */
