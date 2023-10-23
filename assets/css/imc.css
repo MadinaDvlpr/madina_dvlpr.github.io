@@ -248,6 +248,7 @@ input:checked ~ .bubble::after{
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    height: 100vh;
   }
 
   /* label{
