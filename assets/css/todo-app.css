@@ -151,7 +151,7 @@ input:checked ~ .bubble::after{
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
     color: #fff;
-    background-color: var(--primary);
+    background-color: var(--business);
     border-radius: var(--b-radius);
     box-shadow: var(--personal-glow);
     cursor: pointer;

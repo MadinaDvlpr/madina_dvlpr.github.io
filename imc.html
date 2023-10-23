@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mukta+Vaani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/imc.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="app-container">
+        <section id="results">
+            <p id="result-summary" type="text" value="En sous poids" readonly/></p>
+            <img src="assets/img/running.gif" alt="">
+            <div class="result-details">
+                <p id="category">Score IMC</p>
+            </div>
+        </section>
+
+        <section id="parameters">
+            <div class="sexe-picker">
+                <label><input class="input-sexe" type="radio" name="category" id="female" value="female"/>
+                    <span class="bubble female"></span>
+                    <span><img src="assets/img/female-removebg-preview.png" alt=""></span>
+                    <div>Femme</div>
+                </label>
+                <label><input class="input-sexe" type="radio" name="category" id="male" value="male"/>
+                    <span class="bubble male"></span>
+                    <span><img src="assets/img/male-removebg-preview.png" alt=""></span>
+
+                    <div>Homme</div>
+                </label>
+            </div>
+
+            <div class="poids-info">
+                <div class="row">
+                    <!-- <input class="input-values" type="text" min="20" max="200" value="20" id="weight-value"> -->
+                    <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+                    <span id="weight-val">20 kg</span>
+                    <div class="row">
+                        <input type="range" min="120" max="200" value="120" id="height" oninput="calculate()">
+                        <!-- <input class="input-values" type="text" min="20" max="200" value="" id="weight-value"> -->
+
+                        <span id="height-val">120 cm</span>
+                     </div>
+                 </div>
+                 <!-- <button id="calculator" type="submit">Calculer IMC</button> -->
+            </div>
+        </section>
+    </main>
+
+
+    <script src="assets/js/imc-app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>

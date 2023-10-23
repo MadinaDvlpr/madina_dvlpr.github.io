@@ -1,17 +1,22 @@
 window.addEventListener('load', ()=>{
   todos=JSON.parse(localStorage.getItem('todos')) || [];
-  const nameInput = document.querySelector('name');
-  const newTodoForm = document.querySelector('new-todo-form');
-  const username = localStorage.getItem('username') || ' ';
+  const newTodoForm = document.querySelector('#new-todo-form');
+  let username = localStorage.getItem('username') || ' ';
+  const nameInput = document.querySelector('#username');
+  // let createdDate;
   username = nameInput.value;
 
-  nameInput.addEventListener('change',e =>{
-    localStorage.setItem('username', e.target.value);
-  })
-  if(username == null){
+  if(nameInput == null){
     alert("Veuillez saisir un username svp !")
+  }else{
+    nameInput.addEventListener('change',e =>{
+      localStorage.setItem('username', e.target.value);
+    })
   }
 
+
+  
+  
   newTodoForm.addEventListener('submit', e =>{
     e.preventDefault();
 
@@ -19,8 +24,9 @@ window.addEventListener('load', ()=>{
       content:e.target.elements.content.value,
       category: e.target.elements.category.value,
       done:false,
-      createdAt:new Date().getTime()
+      createdDate:new Date().getTime()
     }
+    console.log(todo.createdDate);
     todos.push(todo);
     localStorage.setItem('todos', JSON.stringify(todos));
     e.target.reset();
@@ -32,7 +38,7 @@ function DisplayTodos(){
   const todoList = document.querySelector('#todo-list');
   todoList.innerHTML='';
 
-  todos.sort(createdAt).forEach(todo => {
+  todos.sort(createdDate).forEach(todo => {
     const todoItem = document.createElement('div');
     todoItem.classList.add('todo-item');
     const label = document.createElement('label');
@@ -84,7 +90,7 @@ function DisplayTodos(){
       if(todo.done){
         todo.classList.add('done');
       }else{
-        todo.classList.remoce('done');
+        todo.classList.remove('done');
       }
 
       DisplayTodos();
