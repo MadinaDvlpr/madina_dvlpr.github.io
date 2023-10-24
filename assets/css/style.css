@@ -414,7 +414,7 @@ nav .nav-bar .logo a{
     justify-items: center;
     /* padding: 10rem; */
     /* grid-template-columns: repeat(auto-fit, minmax(400px, 450px)); */
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
     /* gap:1rem; */
   }
 .filters{
@@ -999,9 +999,9 @@ main.contact-page h3{
     }
     .grid{
         justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
     }
-    
-
+ 
     }
 
 
@@ -1151,6 +1151,9 @@ main.contact-page h3{
     }
     .xp-container .job-title {
         font-size: var(--fs-500);
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     
     }

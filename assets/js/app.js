@@ -26,7 +26,6 @@ window.addEventListener('load', ()=>{
       done:false,
       createdDate:new Date().getTime()
     }
-    console.log(todo.createdDate);
     todos.push(todo);
     localStorage.setItem('todos', JSON.stringify(todos));
     e.target.reset();
@@ -38,7 +37,7 @@ function DisplayTodos(){
   const todoList = document.querySelector('#todo-list');
   todoList.innerHTML='';
 
-  todos.sort(createdDate).forEach(todo => {
+  todos.sort(todos.createdDate).forEach(todo => {
     const todoItem = document.createElement('div');
     todoItem.classList.add('todo-item');
     const label = document.createElement('label');

@@ -6,7 +6,8 @@
     --grey:#F6F6F6;
     --darker-grey:#746767;
     --dark:#313154;
-    --danger:#ff5b57;
+    --danger:#fe3f3c;
+    --safe:	#74ee15;
     --shadow: 0 5px 5px 2px rgba(0,0,0,0.1);
     --business-glow:0px 0px 4px rgba(58, 178, 238, O.75);
     --personal-glow:0px 0px 4px rgba(234, 64, 164, 0.75) ;
@@ -153,7 +154,7 @@ input:checked ~ .bubble::after{
     color: #fff;
     background-color: var(--business);
     border-radius: var(--b-radius);
-    box-shadow: var(--personal-glow);
+    box-shadow: var(--business-glow);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -169,7 +170,9 @@ input:checked ~ .bubble::after{
 
 .todo-list .todo-item{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     padding: 1rem;
     border-radius: var(--b-radius);
@@ -209,7 +212,7 @@ input:checked ~ .bubble::after{
 }
 .todo-item .actions .edit{
     margin-right: 0.5rem;
-    background-color: var(--primary);
+    background-color: var(--safe);
 }
 .todo-item .actions .delete{
     margin-right: 0.5rem;
@@ -220,7 +223,22 @@ input:checked ~ .bubble::after{
     text-decoration: line-through;
     color: var(--grey);
 }
+.done{
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
 .app{
     font-family: var(--ff);
+    width: 100%;
 }
+
+@media only screen and (min-width : 768px) {
+    .todo-list .todo-item{
+        flex-direction: row;
+   
+    }
+
+    }
+
 
