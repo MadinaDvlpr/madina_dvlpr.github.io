@@ -386,8 +386,8 @@ nav .nav-bar .logo a{
     max-width: 60vw;
 }
 .hero img{
-    width: 6em;
-    height: 6em;
+    /* width: 8em;
+    height: 8em; */
     margin: 0 auto;
 }
 .hero-pic{
@@ -398,9 +398,9 @@ nav .nav-bar .logo a{
     background: var(--background-vertical);   
 }
 .hero-pic,
-.hero img{
+/* .hero img{
     clip-path:ellipse(50% 50%);
-}
+} */
 
 /* ***********************PORTFOLIO************************ */
 .cross-section,
