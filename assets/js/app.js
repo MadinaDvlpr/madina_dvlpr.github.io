@@ -32,6 +32,11 @@ window.addEventListener('load', ()=>{
     DisplayTodos();
   })
 })
+let deleteBtn = document.createElement("button");
+let addBtn = document.createElement("button");
+
+
+
 
 function DisplayTodos(){
   const todoList = document.querySelector('#todo-list');
