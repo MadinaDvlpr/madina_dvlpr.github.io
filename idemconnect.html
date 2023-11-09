@@ -16,68 +16,72 @@
 <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>PochLib | Madina Dev</title>
+    <title>Park It| Madina Dev</title>
 </head>
 <body>
-    
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo nav-logo"><a href="#">{MadinaDvlpr.}</a></span>
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">{MadinaDvlpr.}</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
-                <ul class="nav-links ">
-                    <li><a href="./index.html">Accueil</a></li>
-                    <li><a href="./resume.html">Parcours</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <!-- <li><a href="./services.html">Services</a></li> -->
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+  <nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo nav-logo"><a href="#">{MadinaDvlpr.}</a></span>
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="#">{MadinaDvlpr.}</a></span>
+                <i class='bx bx-x siderbarClose'></i>
             </div>
-            <div class="darkLight-searchBox nav-icons">
-                <div class="dark-light">
-                    <box-icon name='moon'></box-icon>
-                    <box-icon name='sun' ></box-icon>
-                </div>
-                <div class="socialBox">
-                    <a href="https://dribbble.com/me_madina" target="_blank"><box-icon name='dribbble' type='logo' ></box-icon></a>
-                    <a href="https://github.com/MadinaDvlpr"><box-icon name='github' type='logo' ></box-icon></a>
-                    <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><box-icon type='logo' name='linkedin'></box-icon></a>                      
-                </div>
+            <ul class="nav-links ">
+              <li><a href="home.html">Accueil</a></li>
+              <li><a href="resume.html">Parcours</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox nav-icons">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+            <div class="socialBox">
+                <a href="https://dribbble.com/me_madina" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="https://github.com/MadinaDvlpr"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/magdalarmet/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>                      
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
   
 <section class="projet-section">
 <div class="description">
-    <h1>PochLib : Création d'une interface utilisateur</h1>
+    <h1>Park It : Implémenter une fonctionnalité Java </h1>
     <div class="grid-badge">
         <div class="badge">
             <div class="badge-btn legende">Contributeurs : </div><div class="badge-btn contributeur"> Madina Dvlpr. </div>
         </div>
         <div class="badge">
-            <div class="badge-btn legende">Repository : </div><div class="badge-btn repo"> <a href="https://github.com/MadinaDvlpr/Poch-Lib" target="_blank">PochLib</a> </div>
+            <div class="badge-btn legende">Repository : </div><div class="badge-btn repo"> <a href="https://github.com/MadinaDvlpr/parkingsystem" target="_blank">ParkingSystem</a> </div>
         </div>
         <div class="badge">
             <div class="badge-btn legende">Release date : </div><div class="badge-btn release"> 2022 </div>
         </div>
         
     </div>
-    <p>Le projet consistait à réaliser la librairie Poch’Lib, une application de gestion de livres commandée par “La plume enchantée”. “La plume enchantée” est une librairie.</br></br>
+    <p>Move’it, une société de solutions de mobilité en zones urbaines qui collabore avec des établissements publics afin d’améliorer la circulation et la gestion des parkings dans les villes.  </br>
+       
+        La société a récemment démarré un nouveau système de paiement de parking automatisé appelé Park’it. </br>
+        L'application présente plusieurs bugs qui doivent être corrigés.</br></br>
+    Brief :</br>
+        •	en lançant l’application, l’utilisateur doit sélectionner une action : entrer dans le parking ou en sortir (ou quitter l’application)</br>
+        •	lorsque l’utilisateur entre, le système demande le type de véhicule (voiture ou moto) et le numéro de la plaque d’immatriculation, puis laisse entrer l’utilisateur si une place est disponible. Il indique également à l’utilisateur où se garer</br>
+        •	lorsqu’il quitte le parking, l’utilisateur indique à nouveau son numéro de plaque d’immatriculation. Le système calcule alors et affiche le prix en fonction de la durée de stationnement et du type de véhicule, puis revient au menu d’accueil. Le paiement n’est pas encore traité</br></br>
 
-L’application est à réaliser en Single Page Application (une seule page), et doit être responsive avec au moins 3 formats différents :</br>
 
-•	mobile ;</br>
-•	tablette ;</br>
-•	bureau.</br></br>
-Ce site web se décompose en deux fonctionnalités principales :</br>
+    Besoins : </br>
+    
+        •	ajouter une fonctionnalité de stationnement gratuit pour les 30 premières minutes </br>
+        •	ajouter une réduction de 5 % pour les utilisateurs récurrents </br>
+        •	corriger le code afin qu’il valide tous les tests unitaires </br>
+        •	effectuer les tests d’intégration marqués par les commentaires “TODO”.
 
-•	la recherche et l’ajout d’un livre dans sa liste ;</br>
-•	l’affichage des livres et la suppression d’un livre.</br></br>
-Ma mission était de créer la partie frontend de l’application et de mettre en place les appels sur l'API google.</br>
     </p>
     
 
@@ -89,15 +93,15 @@ Ma mission était de créer la partie frontend de l’application et de mettre e
     </div>
 
     <div class="second-visual">
-        <img src="assets/img//ltp4.png" alt="ltp visuel 2">
+        <img src="assets/img/fasha.png" alt="">
     </div>
 
     <div class="third-visual">
-        <img src="assets/img/ltp3.png" alt="">
+        <img src="assets/img/projet3.jpg" alt="">
     </div>
   </div>
   <button class="brand-btn btn-transparent"><a href="./portfolio.html">Voir d'autres de projets</a></button>
-  <button class="brand-btn btn-fill"><a href="assets/pdf/ltp.pdf">Télécharger le pdf</a></button>         
+  <button class="brand-btn btn-fill"><a href="assets/pdf/parkit.pdf">Télécharger le pdf</a></button>         
   
 
 </section>
