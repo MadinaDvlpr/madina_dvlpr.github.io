@@ -378,6 +378,7 @@ nav .nav-bar .logo a{
 .hero-img{
     width: 60vw;
 } */
+.hero-resume p,
 .hero .hero-desc p{
         top: 4.125em;
         font-size: var(--fs-xl);
@@ -539,7 +540,20 @@ nav .nav-bar .logo a{
 /* .bio-content > *{
     flex:1;
 } */
-
+.hero-resume{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-xl);
+    background-color: var(--Blue);
+    color: var(--body-color);
+    margin-bottom: var(--padding-l);
+}
+.hero-resume img{
+    width: 50%;
+    /* border-radius: var(--b-radius-bubble); */
+}
 .left-el, 
 .right-el{
     flex: 1 0 20%;
@@ -690,7 +704,11 @@ p.emphasize{
 
 .contact-page img{
 /* .bio-content img{ */
-    width: 50vw;
+    width: 25vw;
+    margin-bottom: var(--padding-l);
+}
+.contact-page p{
+    font-size: var(--fs-400);
 }
 /* 
 .resume-container{
