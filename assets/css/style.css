@@ -67,18 +67,20 @@ body{
     color: var(--text-color);
     font-size: var(--fs-400);
     font-family: var(--ff-text);
-    padding: 0 7em;
+    /* padding: 0 7em; */
     max-width: 106.25em;
   }
 
 main{
     display: flex; 
+    margin: 2.5rem 0;
    /* flex: 1; */
 }
-nav{
-    margin: 0 auto;
-}
 
+main{
+    padding: 0 7em;
+
+}
 h1{
     font-size: var(--fs-xl);
     font-family: var(--ff-heading);
@@ -134,9 +136,9 @@ main{
   /* **********************Dark Mode******************** */
   
   body.dark{
-    --body-color:hsl(0, 0%, 0%);
-    --nav-color: hsl(0, 0%, 0%);
-    --side-nav: #242526;
+    --body-color:hsl(210, 3%, 15%);
+    --nav-color: hsl(0, 0%, 20%);
+    --side-nav: hsl(210, 3%, 15%);
     --text-color:hsl(220, 23%, 97%);
     --Contrast:hsl(0, 0%, 0%);
 }
@@ -144,11 +146,15 @@ body.dark nav{
     border-bottom: 1px solid #393838;
     color: var(--text-color);
 }
+.darkLight-searchBox box-icon,
+.nav-icons,
 body.dark nav ul li a,
 body.dark .dark-light .bx,
-body.dark nav .socialBox i {
+body.dark nav .socialBox ion-icon {
     color: var(--text-color);
 }
+/* body.dark .accordion-content #icon, */
+body.dark .accordion-content,
 .info-item a,
 .socials i,
 .social a i,
@@ -187,6 +193,9 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 2em 7em;
+    background-color: var(--nav-color);
+    line-height: 1.5;
 }
 .footer-bottom, 
 .footer-menu{
@@ -241,7 +250,7 @@ nav{
     background-color: var(--nav-color);
     z-index: 100;
     font-size: var(--fs-400);
-    padding: 1em 0;
+    padding: 1em 7em;
 }
 
 nav .nav-bar{
@@ -344,6 +353,7 @@ nav .nav-bar .logo a{
     display: flex;
     align-items: center;
     min-width: 10vw;
+    color: var(--text-color);
 }
 
 .nav-bar .darkLight-searchBox i{
@@ -753,7 +763,9 @@ p.emphasize{
     color: var(--text-color);
 }
 .accordion-header:hover {
-    background-color: hsl(0, 0%, 85%);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    /* color: var(--body-color); */
   }
   .accordion-content {
     padding: 0 18px;
@@ -764,146 +776,8 @@ p.emphasize{
     margin-bottom: 2.5em;
   }  
 
-/* Caroussel */
-/* .caroussel-container{
-    overflow-x: scroll;
-    padding: 1em;
-    cursor: pointer;
-    margin-bottom: 3em;
-}
-.caroussel{
-    display: flex;
-    gap: .5em;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-.caroussel-inner{
-    display: flex;
-    gap: .5em;
-    align-items: center;
-    /* overflow: hidden; 
-    flex-wrap: nowrap;
-    /* animation: slideRight 1.5s ease-in-out forwards; 
-}
-.slide{
-    height: 100%;
-    flex: 1 0 15%;
-    transition: .5s ease-in-out;
-    display: flex;
-    justify-content: center;
-}
-.caroussel-container::-webkit-scrollbar-track {
-    background-color:transparent;
-}
-
-.caroussel-container::-webkit-scrollbar {
-    height: 6px;
-    background-color: transparent;
-}
-
-.caroussel-container::-webkit-scrollbar-thumb {
-    background-color: var(--text-color);
-    border-radius: 3px;
-}
-.caroussel-controls{
-    position: absolute;
-    top: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.caroussel-controls button{
-    /* position: absolute; */
-    /* display: inline-block; 
-    width:4em;
-    height: 4em;
-    border-radius: 50%;
-    background: none;
-    border: none;
-} */
-/* #next{
-    /* font-size: var(--fs-600); */
-    /* left: 80em; */
-
-/* button #next{
-    right: 0;
-} */
-/* .slide svg{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-.slide.heroku{
-    background-color: hsl(262, 71%, 56%);
-}
-.slide.salesforce{
-    background-color: var(--Blue);
-}
-.slide.postman{
-    background-color: hsl(16, 100%, 61%);
-}
-.slide.postgre{
-    background-color:hsl(88, 100%, 59%);
-}
-.slide.java{
-    background-color: hsl(163, 100%, 64%);
-}
-.slide.javascript{
-    background-color:hsl(60, 100%, 50%);
-}
-.slide.git{
-    background-color: hsl(210, 3%, 15%);
-}
-.slide.github{
-    background-color: hsl(276, 61%, 39%);
-}
-.slide.html{
-    background-color: hsl(209, 100%, 56%);
-}
-.slide.css{
-    background-color:
-    #C32BAD ;
-}
-.slide.css:hover{
-    filter: blur(3px);
-    transform: scale(1.1);
-    content: 'CSS';
-}
-
- */
 
 
-/* =====================SLIDERS====================== */
-
-/*jssor slider loading skin spin css*/
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  @keyframes jssorl-009-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
-  /*jssor slider bullet skin 057 css*/
-  .jssorb057 .i {position:absolute;cursor:pointer;}
-  .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
-  .jssorb057 .i:hover .b {stroke-opacity:.7;}
-  .jssorb057 .iav .b {stroke-opacity: 1;}
-  .jssorb057 .i.idn {opacity:.3;}
-  
-  /*jssor slider arrow skin 073 css*/
-  .jssora073 {display:block;position:absolute;cursor:pointer;}
-  .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
-  .jssora073:hover {opacity:.8;}
-  .jssora073.jssora073dn {opacity:.4;}
-  .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
-  
-  
   /* ********PROJECT PAGE TEMPLATE*********** */
   .project-visuals{
     display: grid; 
@@ -1289,6 +1163,7 @@ main.contact-page h3{
     
     /* Smartphones (landscape) ----------- */
     @media only screen and (min-width : 1025px) {
+        
         .img-container .img-placeholder{
             min-height: 39vh;
         }

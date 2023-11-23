@@ -5,8 +5,9 @@ const headers = document.querySelectorAll(".accordion-header");
       const content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      this.querySelector("i").classList.remove("fa-angle-down");
-      this.querySelector("i").classList.add("fa-angle-right");
+      //faire le changement d'icone chevron en bas avec setAttributes
+      this.querySelector("ion-icon").removeAttribute("name", "fa-angle-down");
+      this.querySelector("ion-icon").classList.add("fa-angle-right");
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
       this.querySelector("i").classList.remove("fa-angle-right");
@@ -14,3 +15,6 @@ const headers = document.querySelectorAll(".accordion-header");
     }
   });
 });
+
+//this.querySelector("i").classList.remove("name","chevron-down-outline");
+//this.querySelector("i").setAttribute("name","chevron-up-outline");
